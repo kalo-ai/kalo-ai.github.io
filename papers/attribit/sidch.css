@@ -1,0 +1,22 @@
+body { margin: 0px; padding: 0px; text-align: justify; font-family: "Palatino Linotype","Book Antiqua",Palatino,serif; color: rgb(0, 0, 0); background-color: rgb(208, 208, 208); }
+h1.title { margin: 0px 10px 30px; padding: 14px; padding-top: 18px; font-size: 100%; line-height: normal; color: rgb(255, 255, 255); }
+h1 { margin: 20px 0px 0px 0px; font-size: 150%; line-height: normal; font-weight: 900; color: black; }
+h2 { font-weight: normal; font-size: 125%; line-height: normal; color: rgb(0, 0, 255); }
+p { margin: 10px 10px; padding-left: 30px; padding-top: 10px; padding-bottom: 0px; font-weight: normal; font-size: 100%; line-height: normal; }
+#Content > p { margin: 0px 20px 0px 0px; }
+table { border: 0; margin: 20px 0px 30px 10px; border-collapse: separate; border-spacing: 0px; background-color: white; }
+td { padding: 10px; line-height: normal; vertical-align: top; background-color: white; }
+th { font-size: 110%; font-weight: bold; line-height: normal;  border-bottom: 1px solid black; padding: 3px; line-height: normal; background-color: white; text-align: left; }
+ul { margin: 20px 0px 10px 0px; font-size: 100%; font-weight: normal; line-height: normal; }
+ol { margin: 0px 0px 0px 0px; font-size: 100%; font-weight: normal; line-height: normal; }
+li { margin: 3px 0px; }
+a { text-decoration: none; }
+a:link { color: rgb(0, 0, 255); }
+a:visited { color: rgb(0, 0, 255); }
+a:hover { text-decoration: underline; }
+a.menu { font-size: 100%; font-weight: normal; line-height: normal; }
+a.menu:link { color: rgb(0, 0, 255); text-decoration: none; }
+a.menu:visited { color: rgb(0, 0, 255); text-decoration: none; }
+a.menu:hover { text-decoration: underline; }
+#Content { margin-left: auto; margin-right: auto; padding: 20px; max-width: 1024px; background-color: white }
+img {  border-style: none; }
