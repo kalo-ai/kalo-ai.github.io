@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 <title>ShapePFCN: 3D Shape Segmentation with Projective Convolutional Networks</title>
@@ -30,9 +30,9 @@ body {
   <img alt="teaser" src="teaser.jpg" width="900">
   <h2>People</h2>
   <ul id="people">
-    <li><a href="http://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a> </li>
-    <li><a href="http://geometry.cs.ucl.ac.uk/averkiou/">Melinos Averkiou</a> </li>
-    <li><a href="http://people.cs.umass.edu/~smaji/">Subhransu Maji</a> </li>
+    <li><a href="https://kalo-ai.github.io/">Evangelos Kalogerakis</a> </li>
+    <li><a href="https://geometry.cs.ucl.ac.uk/averkiou/">Melinos Averkiou</a> </li>
+    <li><a href="https://people.cs.umass.edu/~smaji/">Subhransu Maji</a> </li>
     <li><a href="https://www.cse.iitb.ac.in/~sidch/">Siddhartha Chaudhuri</a> </li>
   </ul>
   <h2>Abstract</h2>
@@ -58,16 +58,16 @@ body {
     Poster</h2>
   <a href="ShapePFCN_poster.pdf">ShapePFCN_poster.pdf</a>, 3MB<br>  
   <h2> Labeled mesh dataset from ShapeNetCore</h2>
-  <p><a href="https://drive.google.com/file/d/1z1v_lz7keLX1IQe8pRRq0xv7GacOZS4s/view?usp=sharing">labeled_meshes.7z</a> (688MB): this archive contains the  &ldquo;ground-truth&rdquo;  labelings of the meshes we used for our experiments on <a href="https://www.shapenet.org/">ShapeNetCore</a>, <a href="http://people.cs.umass.edu/~kalo/papers/LabelMeshes/">L-PSB</a> (labeled version of <a href="http://segeval.cs.princeton.edu/">PSB</a>), and <a href="http://irc.cs.sdu.edu.cn/~yunhai/public_html/ssl/ssl.htm">COSEG</a>. The meshes are stored in <a href="https://en.wikipedia.org/wiki/OFF_(file_format)">OFF format</a>.   The ShapeNetCore labelings originate from the &ldquo;expert-verified&rdquo; segmentations in<a href="http://cs.stanford.edu/~ericyi/project_page/part_annotation/index.html"> Yi et al.'s dataset</a>. The original ShapeNetCore labelings were provided in a  point cloud format (~3K points sampled per mesh). We transferred the point labels to mesh polygon labels via a nearest neighbors approach combined with graph cuts. For the L-PSB and COSEG, we used the provided labeled meshes as-is. The mesh labelings are stored in a simple text format: for each label, we store a label id in one line, and the next line contains indices to faces under that label. Face indices are integers starting from 1. The order of faces follows the OFF files. We note that for evaluating the competing methods on ShapeNetCore, we transferred their inferred face labels back to point cloud labels through nearest neighbors, and computed the labeling accuracy according to the original point cloud labelings. For evaluation on L-PSB and COSEG, we measure the labeling accuracy on mesh faces (weighted by face area).</p>
+  <p><a href="https://drive.google.com/file/d/1z1v_lz7keLX1IQe8pRRq0xv7GacOZS4s/view?usp=sharing">labeled_meshes.7z</a> (688MB): this archive contains the  &ldquo;ground-truth&rdquo;  labelings of the meshes we used for our experiments on <a href="https://www.shapenet.org/">ShapeNetCore</a>, <a href="https://kalo-ai.github.io/papers/LabelMeshes/">L-PSB</a> (labeled version of <a href="https://segeval.cs.princeton.edu/">PSB</a>), and <a href="https://irc.cs.sdu.edu.cn/~yunhai/public_html/ssl/ssl.htm">COSEG</a>. The meshes are stored in <a href="https://en.wikipedia.org/wiki/OFF_(file_format)">OFF format</a>.   The ShapeNetCore labelings originate from the &ldquo;expert-verified&rdquo; segmentations in<a href="https://cs.stanford.edu/~ericyi/project_page/part_annotation/index.html"> Yi et al.'s dataset</a>. The original ShapeNetCore labelings were provided in a  point cloud format (~3K points sampled per mesh). We transferred the point labels to mesh polygon labels via a nearest neighbors approach combined with graph cuts. For the L-PSB and COSEG, we used the provided labeled meshes as-is. The mesh labelings are stored in a simple text format: for each label, we store a label id in one line, and the next line contains indices to faces under that label. Face indices are integers starting from 1. The order of faces follows the OFF files. We note that for evaluating the competing methods on ShapeNetCore, we transferred their inferred face labels back to point cloud labels through nearest neighbors, and computed the labeling accuracy according to the original point cloud labelings. For evaluation on L-PSB and COSEG, we measure the labeling accuracy on mesh faces (weighted by face area).</p>
   <h2> Training/Test Split</h2>
-  <p>For the <a href="http://people.cs.umass.edu/~kalo/papers/LabelMeshes/">L-PSB</a>, <a href="http://irc.cs.sdu.edu.cn/~yunhai/public_html/ssl/ssl.htm">COSEG</a>, and the above  ShapeNetCore dataset, we report the mesh ids we used for training and testing here: <a href="splits.txt">splits.txt</a>.<br></p>
+  <p>For the <a href="https://kalo-ai.github.io/papers/LabelMeshes/">L-PSB</a>, <a href="https://irc.cs.sdu.edu.cn/~yunhai/public_html/ssl/ssl.htm">COSEG</a>, and the above  ShapeNetCore dataset, we report the mesh ids we used for training and testing here: <a href="splits.txt">splits.txt</a>.<br></p>
   <h2>Results</h2>
-  <p><a href="labelings.7z">labelings.7z</a>, 9.3MB: this archive contains segmentation and labeling results from our method and <a href="http://people.cs.umass.edu/~kalo/papers/LabelMeshes/index.html">ShapeBoost</a> on the <strong>test shapes</strong> of the above L-PSB, COSEG and ShapeNetCore datasets. The results are stored in  our labeling text format explained above (for each label, we store a label id in one line, and the next line contains indices to faces under that label).  We also provide visualizations of the mesh labelings for our method and ShapeBoost: <a href="https://drive.google.com/file/d/1pfJUXWAevcDnx46NAkA4-A9xc3XGYtgT/view?usp=sharing">ShapePFCNimages.7z</a> (50MB).  If you want to compare your method with these results, please consider using the same training and test splits for fair comparisons. We also note that we do not assume upright or consistent shape orientation in our experiments.</p>
+  <p><a href="labelings.7z">labelings.7z</a>, 9.3MB: this archive contains segmentation and labeling results from our method and <a href="https://kalo-ai.github.io/papers/LabelMeshes/index.html">ShapeBoost</a> on the <strong>test shapes</strong> of the above L-PSB, COSEG and ShapeNetCore datasets. The results are stored in  our labeling text format explained above (for each label, we store a label id in one line, and the next line contains indices to faces under that label).  We also provide visualizations of the mesh labelings for our method and ShapeBoost: <a href="https://drive.google.com/file/d/1pfJUXWAevcDnx46NAkA4-A9xc3XGYtgT/view?usp=sharing">ShapePFCNimages.7z</a> (50MB).  If you want to compare your method with these results, please consider using the same training and test splits for fair comparisons. We also note that we do not assume upright or consistent shape orientation in our experiments.</p>
   <h2> Source Code</h2>
   <p>Latest version on github: <a href="https://github.com/kalo-ai/ShapePFCN">https://github.com/kalo-ai/ShapePFCN</a></p>
   <h2> Acknowledgements </h2>
   <p>Kalogerakis acknowledges support from NSF (CHS-1422441, CHS-1617333), NVidia and Adobe. Maji acknowledges support from NSF (IIS-1617917) and Facebook. Chaudhuri acknowledges support from Adobe and Qualcomm. Our experiments were performed in the UMass GPU cluster obtained under a grant from the Collaborative R&amp;D Fund managed by the Massachusetts Technology Collaborative.</p>
-  <div id="footer"><a href="http://people.cs.umass.edu/kalo/">back to Evangelos Kalogerakis' page</a></div>
+  <div id="footer"><a href="https://people.cs.umass.edu/kalo/">back to Evangelos Kalogerakis' page</a></div>
 </div>
 </body>
 </html>

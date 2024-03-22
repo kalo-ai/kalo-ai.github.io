@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 <title>Learning 3D Mesh Segmentation and Labeling</title>
@@ -30,9 +30,9 @@ body {
     <img alt="teaser" align="middle" src="labelMeshes_teaser.jpg">
   <h2>People</h2>
   <ul id="people">
-    <li><a href="http://www.dgp.toronto.edu/%7Ekalo/">Evangelos Kalogerakis</a> </li>
-    <li><a href="http://www.dgp.toronto.edu/%7Ehertzman/">Aaron Hertzmann</a> </li>    
-    <li><a href="http://www.dgp.toronto.edu/%7Ekaran/">Karan Singh</a> </li>    
+    <li><a href="https://kalo-ai.github.io/">Evangelos Kalogerakis</a> </li>
+    <li><a href="https://www.dgp.toronto.edu/%7Ehertzman/">Aaron Hertzmann</a> </li>    
+    <li><a href="https://www.dgp.toronto.edu/%7Ekaran/">Karan Singh</a> </li>    
   </ul>
   <h2>Abstract</h2>
   <p align="justify">This paper presents a data-driven approach to simultaneous segmentation
@@ -72,7 +72,7 @@ and labelings comparable to those produced by humans.
   <h2><br>
   Labeled PSB Dataset</h2>
   <p><a href="https://drive.google.com/file/d/1tHJ7KEn50mkPy2-GrpYfMYqhXhwl093B/view?usp=sharing">labeledDb.7z</a>, 63.8MB. <br>
-  This archive contains the dataset  created for our experiments. We call it &quot;<em>Labeled PSB dataset</em>&quot; . The files contain the  indices of faces belonging to each label per mesh. The meshes and segmentations come from the Princeton Segmentation Benchmark. The segmentations were then labeled for training and testing, as explained in Section 5, &quot;Data Set&quot; paragraph of our paper. If you plan to use this <em>-Labeled- PSB dataset</em>, please cite both the <a href="http://segeval.cs.princeton.edu/">PSB paper</a> and our paper.<br> 
+  This archive contains the dataset  created for our experiments. We call it &quot;<em>Labeled PSB dataset</em>&quot; . The files contain the  indices of faces belonging to each label per mesh. The meshes and segmentations come from the Princeton Segmentation Benchmark. The segmentations were then labeled for training and testing, as explained in Section 5, &quot;Data Set&quot; paragraph of our paper. If you plan to use this <em>-Labeled- PSB dataset</em>, please cite both the <a href="https://segeval.cs.princeton.edu/">PSB paper</a> and our paper.<br> 
     <br>
   </p>
   <h2><br>
@@ -83,10 +83,10 @@ and labelings comparable to those produced by humans.
   <h2>&nbsp;</h2>
   <h2>  Code &amp; Data</h2>
   <p><a href="LearningMeshSegmentation.7z">LearningMeshSegmentation.7z</a>, 4.5MB <br>
-  The above archive contains C++ and Matlab code for our project (see README.TXT). To compile the C++ code, you need to install <a href="http://www.netlib.org/clapack/">CLAPACK</a> and <a href="http://www.csd.uwo.ca/~olga/code.html">Olga Velsker's GCMex </a>external libraries. The code will work only for closed manifold shapes, as in the PSB.</p>
+  The above archive contains C++ and Matlab code for our project (see README.TXT). To compile the C++ code, you need to install <a href="https://www.netlib.org/clapack/">CLAPACK</a> and <a href="https://www.csd.uwo.ca/~olga/code.html">Olga Velsker's GCMex </a>external libraries. The code will work only for closed manifold shapes, as in the PSB.</p>
  <p>If you are interested in just using the  shape features for the PSB meshes based on the above code, I also provide the following archive:<br>
     <a href="https://drive.google.com/file/d/1Mrv_YKao12oDE7MIINqdoQ9S3wUQ5_6C/view?usp=sharing">features.7z</a>, 5GB. <br>
-This archive contains the shape features for each of the 380 meshes in the PSB dataset. Each file contains F feature vectors, where F is the number of faces. Each feature vector contains the curvature (64 features), PCA (48 features), geodesic shape contexts (270 features), geodesic distance features (15 features), shape diameter (72 features), distance from medial surface (24 features), annd spin images (100 features) in this order. Note that shape contexts were developed for 2D shape matching  [Belongie et al. 2002]. Our shape context formulation uses geodesic distances between points and angles between normals to adapt them in the case of 3D meshes. Compared to the original version of the shape context features, I have added more  bin configurations for them. These features  worked slightly better in later experiments (e.g., they were used in the paper &quot;<a href="http://people.cs.umass.edu/~kalo/papers/assembly/ProbReasoningShapeModeling.pdf">Probabilistic Reasoning for Assembly-Based 3D Modeling</a>&quot;).</p>
+This archive contains the shape features for each of the 380 meshes in the PSB dataset. Each file contains F feature vectors, where F is the number of faces. Each feature vector contains the curvature (64 features), PCA (48 features), geodesic shape contexts (270 features), geodesic distance features (15 features), shape diameter (72 features), distance from medial surface (24 features), annd spin images (100 features) in this order. Note that shape contexts were developed for 2D shape matching  [Belongie et al. 2002]. Our shape context formulation uses geodesic distances between points and angles between normals to adapt them in the case of 3D meshes. Compared to the original version of the shape context features, I have added more  bin configurations for them. These features  worked slightly better in later experiments (e.g., they were used in the paper &quot;<a href="https://kalo-ai.github.io/papers/assembly/ProbReasoningShapeModeling.pdf">Probabilistic Reasoning for Assembly-Based 3D Modeling</a>&quot;).</p>
  <h2><br>
   Acknowledgements  </h2>
   <p>We would like to particularly thank Xiaobai Chen, Aleksey Golovinskiy, and Thomas
@@ -99,7 +99,7 @@ This archive contains the shape features for each of the 380 meshes in the PSB d
     This project was funded by NSERC, MITACS, CFI, and
     the Ontario MRI. This work was done while Aaron Hertzmann was on a sabbatical
     visit at Pixar Animation Studios. </p>
-  <div id="footer"><a href="http://www.dgp.toronto.edu/%7Ekalo">back to Evangelos Kalogerakis' page</a></div>
+  <div id="footer"><a href="https://kalo-ai.github.io/">back to Evangelos Kalogerakis' page</a></div>
 </div>
 </body>
 </html>
