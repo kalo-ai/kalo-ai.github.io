@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Learning 3D Mesh Segmentation and Labeling</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link media="all" href="style.css" type="text/css" rel="stylesheet">
+<style type="text/css" media="all">
+img {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 10px;
+	FLOAT: right;
+	PADDING-BOTTOM: 10px;
+	PADDING-TOP: 10px
+}
+#content {
+	MARGIN-LEFT: auto;
+	WIDTH: expression(document.body.clientWidth > 925? "925px": "auto" );
+	MARGIN-RIGHT: auto;
+	TEXT-ALIGN: left;
+	max-width: 925px
+}
+body {
+	TEXT-ALIGN: center
+}
+</style>
+</head>
+<body>
+<div id="content">
+    <h1 align="center">Learning 3D Mesh Segmentation and Labeling</h1>
+    <img alt="teaser" align="middle" src="labelMeshes_teaser.jpg">
+  <h2>People</h2>
+  <ul id="people">
+    <li><a href="http://www.dgp.toronto.edu/%7Ekalo/">Evangelos Kalogerakis</a> </li>
+    <li><a href="http://www.dgp.toronto.edu/%7Ehertzman/">Aaron Hertzmann</a> </li>    
+    <li><a href="http://www.dgp.toronto.edu/%7Ekaran/">Karan Singh</a> </li>    
+  </ul>
+  <h2>Abstract</h2>
+  <p align="justify">This paper presents a data-driven approach to simultaneous segmentation
+and labeling of parts in 3D meshes. An objective function
+is formulated as a Conditional Random Field model, with terms
+assessing the consistency of faces with labels, and terms between
+labels of neighboring faces. The objective function is learned from
+a collection of labeled training meshes. The algorithm uses hundreds
+of geometric and contextual label features and learns different
+types of segmentations for different tasks, without requiring
+manual parameter tuning. Our algorithm achieves a significant
+improvement in results over the state-of-the-art when evaluated on
+the Princeton Segmentation Benchmark, often producing segmentations
+and labelings comparable to those produced by humans.
+  </p><br>
+
+
+  <a href="LabelMeshes.pdf"><img style="padding: 0px 30px 10px 10px; float: left;" alt="paper thumbnail" src="labelMeshes_thumbNail.jpg"></a>
+  <h2>Paper</h2>
+  <a href="LabelMeshes.pdf">LabelMeshes.pdf</a>, 14MB<br>
+  <br>
+  <h3>Citation</h3>
+  <p>Evangelos Kalogerakis, Aaron Hertzmann, Karan Singh, &quot;Learning 3D Mesh Segmentation and Labeling&quot;,
+    <em>ACM Transactions on Graphics, Vol. 29, No. 3, July 2010 (also in SIGGRAPH 2010, Los Angeles, USA)</em> <br>
+    <br>
+    <a href="labelMeshes_bib.txt">Bibtex</a> </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p> <br>   
+  <h2>Presentation</h2>
+<!--  <a href="LabelMeshes.pdf">LabelMeshes.pdf</a>, 4MB.<br>-->
+  <a href="LabelMeshes_web.ppt">LabelMeshes_web.ppt</a>, 7MB<br>
+  <a href="LabelMeshes_web.pdf">LabelMeshes_web.pdf</a>, 4.4MB.. <br>
+  The above powerpoint and pdf files contain the Siggraph 2010 presentation of our method. <br>
+  Note: 
+  You might need to install the <a href="MyriadPro.zip">Myriad Pro fonts</a> to view the ppt file correctly. <br>
+  <br>
+  <h2><br>
+  Labeled PSB Dataset</h2>
+  <p><a href="https://drive.google.com/file/d/1tHJ7KEn50mkPy2-GrpYfMYqhXhwl093B/view?usp=sharing">labeledDb.7z</a>, 63.8MB. <br>
+  This archive contains the dataset  created for our experiments. We call it &quot;<em>Labeled PSB dataset</em>&quot; . The files contain the  indices of faces belonging to each label per mesh. The meshes and segmentations come from the Princeton Segmentation Benchmark. The segmentations were then labeled for training and testing, as explained in Section 5, &quot;Data Set&quot; paragraph of our paper. If you plan to use this <em>-Labeled- PSB dataset</em>, please cite both the <a href="http://segeval.cs.princeton.edu/">PSB paper</a> and our paper.<br> 
+    <br>
+  </p>
+  <h2><br>
+  Results</h2>
+<a href="LabelMeshesResults.7z">LabelMeshesResults.7z</a>, 3.8MB. <br>
+  This archive contains segmentation and labeling results from one of the leave-one-out-error experiments. See Section 5, &quot;Data Set&quot; paragraph of our paper for more details.<br>
+  
+  <h2>&nbsp;</h2>
+  <h2>  Code &amp; Data</h2>
+  <p><a href="LearningMeshSegmentation.7z">LearningMeshSegmentation.7z</a>, 4.5MB <br>
+  The above archive contains C++ and Matlab code for our project (see README.TXT). To compile the C++ code, you need to install <a href="http://www.netlib.org/clapack/">CLAPACK</a> and <a href="http://www.csd.uwo.ca/~olga/code.html">Olga Velsker's GCMex </a>external libraries. The code will work only for closed manifold shapes, as in the PSB.</p>
+ <p>If you are interested in just using the  shape features for the PSB meshes based on the above code, I also provide the following archive:<br>
+    <a href="https://drive.google.com/file/d/1Mrv_YKao12oDE7MIINqdoQ9S3wUQ5_6C/view?usp=sharing">features.7z</a>, 5GB. <br>
+This archive contains the shape features for each of the 380 meshes in the PSB dataset. Each file contains F feature vectors, where F is the number of faces. Each feature vector contains the curvature (64 features), PCA (48 features), geodesic shape contexts (270 features), geodesic distance features (15 features), shape diameter (72 features), distance from medial surface (24 features), annd spin images (100 features) in this order. Note that shape contexts were developed for 2D shape matching  [Belongie et al. 2002]. Our shape context formulation uses geodesic distances between points and angles between normals to adapt them in the case of 3D meshes. Compared to the original version of the shape context features, I have added more  bin configurations for them. These features  worked slightly better in later experiments (e.g., they were used in the paper &quot;<a href="http://people.cs.umass.edu/~kalo/papers/assembly/ProbReasoningShapeModeling.pdf">Probabilistic Reasoning for Assembly-Based 3D Modeling</a>&quot;).</p>
+ <h2><br>
+  Acknowledgements  </h2>
+  <p>We would like to particularly thank Xiaobai Chen, Aleksey Golovinskiy, and Thomas
+    Funkhouser for providing their segmentation benchmark and code,
+    as well as Szymon Rusinkiewicz for trimesh2, and Olga Veksler for the graph
+    cuts code. We thank Daniela Giorgi and AIM@SHAPE for providing
+    the meshes from the Watertight Track of SHREC 2007 that are
+    included in the benchmark. We also thank David Fleet and John
+    Hancock for computing resources, and Olga Vesselova for proofreading.
+    This project was funded by NSERC, MITACS, CFI, and
+    the Ontario MRI. This work was done while Aaron Hertzmann was on a sabbatical
+    visit at Pixar Animation Studios. </p>
+  <div id="footer"><a href="http://www.dgp.toronto.edu/%7Ekalo">back to Evangelos Kalogerakis' page</a></div>
+</div>
+</body>
+</html>

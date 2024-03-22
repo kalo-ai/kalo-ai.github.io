@@ -1,0 +1,57 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Shape Synthesis from Sketches via Procedural Models and Convolutional Networks</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link media="all" href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+	<h1>
+		<p>Shape Synthesis from Sketches via </p> Procedural Models and Convolutional Networks
+	</h1>
+	<div id="header">
+		<p id="people">
+			<a href="http://people.cs.umass.edu/~hbhuang/">Haibin Huang</a><sup>1</sup>,
+			<a href="http://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a><sup>1</sup>,
+			<a href="http://www.meyumer.com/"> M. Ersin Yumer </a><sup>2</sup>,
+			<a href="https://research.adobe.com/person/radomir-mech/"> Radomir Mech </a><sup>2</sup>
+			
+		</p>
+            <p>IEEE Transactions on Visualization and Computer Graphics 2017</p>	
+            <p><span class="Affiliation"><sup>1</sup>University of Massachusetts Amherst</span></p>
+            <p><span class="Affiliation"><sup>2</sup>Adobe Research</span></p>
+  
+	</div>
+	<img id="teaser" alt="teaser" src="srpm_teaser.jpg">
+	<h2>Abstract</h2>
+	<p id="text">
+	Procedural modeling techniques can produce high quality visual content through complex rule sets. However, controlling the outputs of these techniques for design purposes is often notoriously difficult
+for users due to the  large number of parameters involved in these rule sets and    also their  non-linear relationship to the resulting content. 
+To circumvent this problem, we present a sketch-based approach to procedural modeling. Given an approximate and abstract hand-drawn 2D sketch provided by a user, our algorithm  automatically computes a set of procedural model parameters, which in turn yield multiple, detailed output shapes   that resemble the user's input sketch. 
+The user can then select an output shape, or further modify the sketch to explore alternative ones. At the heart of our approach is a deep Convolutional Neural Network (CNN) that is trained to map sketches to procedural model parameters. The network is trained by large amounts of automatically generated synthetic line drawings.   
+By using  an intuitive medium i.e., freehand sketching as input,  users  are set free from manually adjusting procedural model parameters, yet they are still able to create high quality content. We demonstrate the accuracy and efficacy of our method in a  variety of procedural modeling scenarios including design of man-made and organic shape.</p>
+	<h2>Paper</h2>
+	<p><a href="http://people.cs.umass.edu/~kalo/papers/shapepmconvnet/shapepmconvnet.pdf"><img class="PaperFigure" alt="paper thumbnail" src="srpm_paper.jpg"></a></p>
+       <a href="ShapeSynthesisPMCNN.bib">[Bibtex]</a>
+        <h2>Supplementary Material</h2>
+        <p><a href="supp_material.pdf"> More results</a>, 40M</p>
+	<h2>Code</h2>
+       <p><a href="shapeSynthesisWithSketchviaCNN.zip"> Code </a></p>
+       <p>This archive contains code for training our CNN model that generates procedural model parameters from sketches with Caffe, and code for extracting CNN features from given sketches. </p>
+       <h2>Presentation</h2>
+	<p><a href="pg2016.pdf"> Presentation</a></p>
+       <h2>Acknowledgments</h2>
+       <p>Kalogerakis gratefully acknowledges support from NSF (CHS-1422441,CHS-1617333) and NVidia for GPU donations. We thank Daichi Ito for providing us with procedural models, and Olga Vesselova for proofreading. We finally thank the anonymous reviewers for their feedback.</p>
+ 
+       <p>Haibin Huang thanks Cosimo Wei  and Yufei Wang  for help and discussion on Caffe.</p>
+
+       <div id="footer">
+            Copyright 2016  Haibin Huang and Evangelos Kalogerakis | Last updated: 09/27/2016
+        </div>
+        <div class="FooterLine">
+        </div>
+</div>
+</body>
+</html>

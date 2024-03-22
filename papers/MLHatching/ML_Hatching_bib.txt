@@ -1,0 +1,8 @@
+@article{Kalogerakis:2012:mlhatching,
+  Author    = {Evangelos Kalogerakis and Derek Nowrouzezahrai and Simon Breslav and Aaron Hertzmann},
+  Title     = {Learning {H}atching for {P}en-and-{I}nk {I}llustration of {S}urfaces},
+  Journal   = {ACM Transactions on Graphics},
+  Volume    = {31},
+  Number    = {1},
+  Year = {2012},
+}

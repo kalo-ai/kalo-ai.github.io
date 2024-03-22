@@ -1,0 +1,8 @@
+@article{Kalogerakis:2009:ddcurvature,
+  Author    = {Evangelos Kalogerakis and Derek Nowrouzezahrai and Patricio Simari and James McCrae and Aaron Hertzmann and Karan Singh},
+  Title     = {Data-driven curvature for real-time line drawing of dynamic scene},
+  Journal   = {{ACM} {T}ransactions on {G}raphics},
+  Volume    = {28},
+  Number    = {1},
+  Year      = {2009},
+}

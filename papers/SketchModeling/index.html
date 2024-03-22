@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>3D Shape Reconstruction from Sketches via Multi-view Convolutional Networks</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link media="all" href="style.css" type="text/css" rel="stylesheet">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-66871155-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+<div id="content">
+	<h1>
+		3D Shape Reconstruction from Sketches via Multi-view Convolutional Networks
+	</h1>
+	<div id="header">
+		<p id="people">
+			<a href="https://people.cs.umass.edu/~zlun/">Zhaoliang Lun</a>,
+			<a href="https://people.cs.umass.edu/~mgadelha/">Matheus Gadelha</a>,
+			<a href="https://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a>,
+			<a href="https://people.cs.umass.edu/~smaji/">Subhransu Maji</a>,
+			<a href="https://people.cs.umass.edu/~ruiwang/">Rui Wang</a>
+		</p>
+		<p><em>Proceedings of the International Conference on 3D Vision (3DV) 2017</em></p>
+		<p><strong>Preprint: <a href="SketchModeling.pdf">[PDF]</a></strong></p>
+	</div>
+	<img id="teaser" alt="teaser" src="SketchModeling_teaser.png">
+	<h2>Abstract</h2>
+	<p id="text">
+		We propose a method for reconstructing 3D shapes from 2D sketches in the form of line drawings. Our method takes as input a single sketch, or multiple sketches, and outputs a dense point cloud representing a 3D reconstruction of the input sketch(es). The point cloud is then converted into a polygon mesh. At the heart of our method lies a deep, encoder-decoder network. The encoder converts the sketch into a compact representation encoding shape information. The decoder converts this representation into depth and normal maps capturing the underlying surface from several output viewpoints. The multi-view maps are then consolidated into a 3D point cloud by solving an optimization problem that fuses depth and normals across all viewpoints.  Based on our experiments, compared to other methods, such as volumetric networks, our architecture offers several advantages, including more faithful reconstruction, higher output surface resolution, better preservation of  topology and shape structure.
+	</p>
+	<h2>Paper</h2>
+	<table><tr>
+		<td>
+			<a href="SketchModeling.pdf">
+				<img id="thumbnail" alt="paper thumbnail" src="SketchModeling_thumbnail.jpg">
+			</a>
+		</td>
+		<td>
+			&#x25BA;<a href="SketchModeling.pdf">SketchModeling.pdf</a>, 18 MB<br>
+			<br>
+			<p>
+				Zhaoliang Lun, Matheus Gadelha, Evangelos Kalogerakis, Subhransu Maji, Rui Wang<br>
+				&quot;3D Shape Reconstruction from Sketches via Multi-view Convolutional Networks&quot;<br>
+				<em>Proceedings of the International Conference on 3D Vision (3DV) 2017</em>
+				<a href="SketchModeling.bib">[Bibtex]</a>
+			</p>
+		</td>
+	</tr></table>
+	<h2>Supplementary Material</h2>
+	<p id="text">
+		The following archive is the supplementary material for our paper. Please refer to our paper for more details.
+	</p>
+	<p>&#x25BA;<a href="Supplementary.zip">Supplementary.zip</a>, 30 MB</p>
+	<h2>Code</h2>
+	<p id="text">
+		The following archive contains source code for our algorithm. Please read the readme file within the archive for more details.
+	</p>
+	<p>&#x25BA;<a href="Code.7z">Code.7z</a>, 4 MB</p>
+	<p>&#x25BA;<a href="https://github.com/happylun/SketchModeling">Fork me on GitHub.</a></p>
+	<h2>Data</h2>
+	<p id="text">
+		The following archives contain data for training / testing our algorithm. Please read the readme file in the codes for instructions on how to use them.
+	</p>
+	<p>&#x25BA;<a href="TestingData.7z">TestingData.7z</a>, 7 MB</p>
+	<p>&#x25BA;<a href="http://neghvar.cs.umass.edu/public_data/zhaoliang_lun_trainingdata.7z">TrainingData.7z</a>, 14 GB</p>
+	<p>&#x25BA;<a href="http://neghvar.cs.umass.edu/public_data/zhaoliang_lun_checkpoint.7z">Checkpoint.7z </a>, 12 GB</p>
+	<i><a href="download.txt">(Error in downloading the gigantic files?)</a></i>
+ 	<h2>Presentation</h2>
+	<p id="text">
+		The following files contain the slides presented in 3DV 2017 at Qingdao, China.
+	</p>
+	<p>&#x25BA;<a href="Presentation.pptx">Presentation.pptx</a>, 5.7 MB</p>
+	<p>&#x25BA;<a href="Presentation.pdf">Presentation.pdf</a>, 3.8 MB</p>
+	<h2>Copyright</h2>
+	<p id="text">
+		All 3D shape models used in this project are downloaded from the Internet and the original authors hold the copyright of the models. The code and data are provided for the convenience of academic research only.
+	</p>
+	<h2>Acknowledgments</h2>
+	<p id="text">
+		We acknowledge support from NSF (CHS-1422441, CHS-1617333, IIS-1617917,  IIS-1423082), Adobe, NVidia, and Facebook. Our  experiments were performed in the UMass GPU cluster obtained under a grant from the Collaborative R&amp;D Fund managed by the Massachusetts Technology Collaborative.
+	</p>
+	<div id="footer"><a href="http://people.cs.umass.edu/~kalo/">back to Evangelos Kalogerakis' page</a></div>
+</div>
+</body>
+</html>

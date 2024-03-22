@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Learning to Group Discrete Graphical Patterns</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link media="all" href="style.css" type="text/css" rel="stylesheet">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-66871155-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+<div id="content">
+	<h1>
+		Learning to Group Discrete Graphical Patterns
+	</h1>
+	<div id="header">
+		<p id="people">
+			<a href="https://people.cs.umass.edu/~zlun/">Zhaoliang Lun*</a>,
+			<a href="https://changqingzou.weebly.com/">Changqing Zou*</a>,
+			<a href="https://people.cs.umass.edu/~hbhuang/">Haibin Huang</a>,
+			<a href="https://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a>,
+			<a href="https://www.cs.sfu.ca/~pingtan/">Ping Tan</a>,
+			<a href="https://team.inria.fr/imagine/marie-paule-cani/">Marie-Paule Cani</a>,
+			<a href="https://www.cs.sfu.ca/~haoz/">Hao Zhang</a>
+		</p>	
+		<p><em>ACM Transactions on Graphics (Proc. ACM SIGGRAPH ASIA 2017)</em></p>
+		<p><strong>Preprint:  <a href="PatternGrouping.pdf">[PDF]</a></strong></p>
+	</div>
+	<img id="teaser" alt="teaser" src="PatternGrouping_teaser.png">
+	<h2>Abstract</h2>
+	<p id="text">
+		We introduce a <i>deep learning</i> approach for grouping discrete patterns common in graphical designs. Our approach is based on a <i>convolutional neural network</i> architecture that learns a <i>grouping measure</i> defined over a pair of pattern  elements. Motivated by perceptual grouping principles, the key feature of our network is the encoding of element shape, context, symmetries, and structural arrangements. These element properties are all jointly considered and appropriately weighted in our grouping measure. To better align our measure with the human perception of grouping, we train our network  on a large, human-annotated dataset of pattern groupings consisting of patterns at varying granularity levels, with rich element relations and varieties, tempered with noise and other data imperfections. Our results demonstrate that our deep-learned  measure leads to robust pattern groupings.
+	</p>
+	<h2>Paper</h2>
+	<table><tr>
+		<td>
+			<a href="PatternGrouping.pdf">
+				<img id="thumbnail" alt="paper thumbnail" src="PatternGrouping_thumbnail.jpg">
+			</a>
+		</td>
+		<td>
+			&#x25BA;<a href="PatternGrouping.pdf">PatternGrouping.pdf</a>, 11 MB<br>
+			<br>
+			<p>
+				Zhaoliang Lun*, Changqing Zou*, Haibin Huang, Evangelos Kalogerakis, Ping Tan, Marie-Paule Cani, Hao Zhang,<br>
+				&quot;Learning to Group Discrete Graphical Patterns&quot;,<br>
+				<em>ACM Transactions on Graphics (Proc. ACM SIGGRAPH ASIA 2017)</em>
+				<a href="PatternGrouping.bib">[Bibtex]</a>
+			</p>
+		</td>
+	</tr></table>
+	<h2>Supplementary Material</h2>
+	<p id="text">
+		The following file contains all images used in our test set, as well as the human-annotated groups and our grouping results. Please refer to our paper for more details.
+	</p>
+	<p>&#x25BA;<a href="http://antares.cs.umass.edu/project_data/StyleSimilarity/PatternAnalysis/Supplementary.pdf">Supplementary.pdf</a>, 23 MB</p>
+	<h2>Data</h2>
+	<p id="text">
+		The following archives contain training data and testing data used in our experiments. Please read the readme file within the archive for more details.
+	</p>
+	<p>&#x25BA;<a href="http://antares.cs.umass.edu/project_data/StyleSimilarity/PatternAnalysis/TrainData.7z">TrainData.7z</a>, 272 MB</p>
+	<p>&#x25BA;<a href="http://antares.cs.umass.edu/project_data/StyleSimilarity/PatternAnalysis/TestData.7z">TestData.7z</a>, 12 MB</p>
+	<h2>Presentation</h2>
+	<p id="text">
+		The following files contain the slides presented in SIGGRAPH ASIA 2017 at Bangkok.
+	</p>
+	<p>&#x25BA;<a href="Presentation.pptx">Presentation.pptx</a>, 12.8 MB</p>
+	<p>&#x25BA;<a href="Presentation.pdf">Presentation.pdf</a>, 3.4 MB</p>
+	<h2>Copyright</h2>
+	<p id="text">
+		All testing data images used in this project are downloaded from the Internet and the original authors hold the copyright of the images. The data are provided for the convenience of academic research only.
+	</p>
+	<h2>Acknowledgments</h2>
+	<p id="text">
+		We thank the anonymous reviewers for their comments and Dr. Ke Li for the help on experimental data preparation.
+		Zou acknowledges support from the Science and Technology Plan Project of Hunan Province (Grant NO.: 2016TP1020) and the Program of Key Disciplines in Hunan Province. 
+		Kalogerakis acknowledges support from NSF (Grant NO.: CHS-1422441 and CHS-1617333), and the Massachusetts Technology Collaborative grant for funding the UMass GPU cluster.
+		Tan acknowledges support from NSERC Canada (Grant NO.: 31-611663 and 31-611664). 
+		Zhang acknowledges support from NSERC Canada (Grant NO.: 611370 and 611649), and gift funds from Adobe Research.
+	</p>
+	<div id="footer"><a href="http://people.cs.umass.edu/~kalo/">back to Evangelos Kalogerakis' page</a></div>
+</div>
+</body>
+</html>

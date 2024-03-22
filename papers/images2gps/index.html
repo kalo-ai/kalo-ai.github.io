@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Image Sequence Geolocation with Human Travel Priors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link media="all" href="style.css" type="text/css" rel="StyleSheet">
+<style type="text/css" media="all">
+IMG {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 10px;
+	FLOAT: right;
+	PADDING-BOTTOM: 10px;
+	PADDING-TOP: 10px
+}
+#content {
+	MARGIN-LEFT: auto;
+	WIDTH: expression(document.body.clientWidth > 895? "895px": "auto" );
+	MARGIN-RIGHT: auto;
+	TEXT-ALIGN: left;
+	max-width: 895px
+}
+BODY {
+	TEXT-ALIGN: center
+}
+</style>
+</head>
+<body>
+<div id="content">
+    <h1 align="center">Image Sequence Geolocation with Human Travel Priors</h1>
+    <img align="middle" src="images2gps_teaser.jpg">
+  </center>
+  <h2>People</h2>
+  <ul id="people">
+    <li><a href="http://www.dgp.toronto.edu/%7Ekalo/">Evangelos Kalogerakis</a> </li>
+    <li>Olga Vesselova</li>
+    <li><a href="http://www.cs.cmu.edu/%7Ejhhays/">James Hays</a></li>
+    <li><a href="http://www.cs.cmu.edu/%7Eefros/">Alexei Efros</a> </li>
+    <li><a href="http://www.dgp.toronto.edu/%7Ehertzman/">Aaron Hertzmann</a> </li>    
+  </ul>
+  <h2>Abstract</h2>
+  <p> This paper presents a method for estimating geographic
+    location for sequences of time-stamped photographs. A
+    prior distribution over travel describes the likelihood of
+    traveling from one location to another during a given time
+    interval. This distribution is based on a training database of
+    6 million photographs from Flickr.com. An image likelihood
+    for each location is defined by matching a test photograph
+    against the training database. Inferring location for images
+    in a test sequence is then performed using the Forward-
+    Backward algorithm, and the model can be adapted to individual
+    users as well. Using temporal constraints allows
+    our method to geolocate images without recognizable landmarks,
+    and images with no geographic cues whatsoever.
+    This method achieves a substantial performance improvement
+    over the best-available baseline, and geolocates some
+    users' images with near-perfect accuracy. </p>
+  <a href="images2gps.pdf"><img style="padding: 0px 30px 10px 10px; float: left;" alt="paper thumbnail" src="images2gps_thumbnail.jpg"></a>
+  <h2>Paper</h2>
+  <a href="images2gps.pdf">images2gps.pdf</a>, 2MB<br>
+  <font size="-2" color="#333333">(note: this version includes a minor correction in the experimental results)</font><br>
+  <br>
+  <h3>Citation</h3>
+  <p>Evangelos Kalogerakis, Olga Vesselova, James Hays, Alexei A. Efros, Aaron Hertzmann,  &quot;Image Sequence Geolocation with Human Travel Priors&quot;,
+    <em>Proceedings of the IEEE Internaltional Conference on Computer Vision Recognition (ICCV)</em>, 2009. <br>
+    <br>
+    <a href="images2gps_bib.txt">Bibtex</a> </p>
+    <p>&nbsp;</p>
+  <h2>Presentation</h2>
+  <a href="images2gps_ICCV2009.pdf"> images2gps_ICCV2009.pdf</a>, 3.89MB.<br>
+  <a href="images2gps_ICCV2009_extended.pdf">images2gps_ICCV2009_extended.pdf</a>, 4.65MB.<br>
+  The first file  contains the ICCV 2009 presentation of our method. The second presentation is a more detailed version of the first one.<br><br>
+  <h2>All Geolocation Results</h2>
+  <a href="image2gps_results.zip"> image2gps_results.zip</a>, 35MB. <br>
+  This archive contains the results for our test dataset as well as the toy datasets of our paper. Please see the README.TXT file in the archive for more details.
+  <h2>Acknowledgements</h2>
+  This work was supported by CFI, CIFAR,
+  Google, Microsoft Research, NSERC, NSF grants IIS-0546547
+  and CCF-0541230, and the Ontario MRI. Thanks to Clauset et
+  al. for providing their power-law fitting code online.
+  <div id="footer"><a href="http://www.dgp.toronto.edu/%7Ekalo">back to Evangelos Kalogerakis' page</a></div>
+</div>
+</body>
+</html>

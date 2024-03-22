@@ -1,0 +1,6 @@
+@inproceedings{Kalogerakis:2006:graphicsOntologies,
+  Author    = {Evangelos Kalogerakis and Nektarious Moumoutzis and Stavros Christodoulakis},
+  Title     = {Coupling ontologies with graphics content for Knowledge Driven Visualization},
+  Booktitle = {Proceedings of the {IEEE} {V}irtual {R}eality Conference 2006},
+  Year      = {2006},
+}

@@ -1,0 +1,9 @@
+@article{Kalogerakis:2009:robustCurvatureLines,
+  Author    = {Evangelos Kalogerakis and Derek Nowrouzezahrai and Patricio Simari and Karan Singh},
+  Title     = {Extracting lines of curvature from noisy point clouds},
+  Journal   = {Special Issue of the {E}lsevier {C}omputer-{A}ided {D}esign journal on {P}oint-{B}ased {C}omputational {T}echniques},
+  Volume    = {41},
+  Number    = {4},
+  Pages     = {282--292},
+  Year      = {2009},
+}

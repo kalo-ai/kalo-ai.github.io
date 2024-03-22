@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Elements of Style: Learning Perceptual Shape Style Similarity</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link media="all" href="style.css" type="text/css" rel="stylesheet">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-66871155-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+<div id="content">
+	<h1>
+		Elements of Style: Learning Perceptual Shape Style Similarity
+	</h1>
+	<div id="header">
+		<p id="people">
+			<a href="http://people.cs.umass.edu/~zlun/">Zhaoliang Lun</a>,
+			<a href="http://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a>,
+			<a href="http://www.cs.ubc.ca/~sheffa/">Alla Sheffer</a>
+		</p>	
+		<p><em>ACM Transactions on Graphics (Proc. ACM SIGGRAPH 2015)</em></p>
+		<p><strong>Preprint:  <a href="StyleSimilarity.pdf">[PDF]</a></strong></p>
+	</div>
+	<img id="teaser" alt="teaser" src="StyleSimilarity_teaser.jpg">
+	<h2>Abstract</h2>
+	<p id="text">
+		The human perception of stylistic similarity transcends structure and function - for instance, a bed and a dresser may share a common style. An algorithmically computed style similarity measure that mimics human perception, can benefit a range of computer graphics applications. Previous work in style analysis focused on shapes within the same class, and leveraged structural similarity between these shapes to facilitate analysis. In contrast, we introduce and successfully validate the first structure-transcending style similarity measure, one closely aligned with the human perception of style similarity. Our measure is inspired by observations about style-similarity in art history literature, which point to the presence of similarly shaped, salient, geometric elements as a key indicator of stylistic similarity between structurally different objects. We translate these observations into an algorithmic measure by quantifying in geometric terms what makes geometric elements be perceived as similarly shaped, employing this quantification to detect similar style elements on the analyzed shapes, and finally collating the element-level geometric similarity measurements into an object-level style measure consistent with human perception. To achieve this consistency we employ crowd-sourcing to quantify the different components of our measure and learn the relative perceptual importance of a range of elementary shape distances and other parameters used in our measurement from 50K responses to cross-structure style similarity queries provided by over 2500 participants. We train and validate our method on this dataset, showing it to successfully predict relative style similarity with 90% accuracy based on 10-fold cross-validation.
+	</p>
+	<h2>Paper</h2>
+	<table><tr>
+		<td>
+			<a href="StyleSimilarity.pdf">
+				<img id="thumbnail" alt="paper thumbnail" src="StyleSimilarity_thumbnail.jpg">
+			</a>
+		</td>
+		<td>
+			&#x25BA;<a href="StyleSimilarity.pdf">StyleSimilarity.pdf</a>, 30 MB<br>
+			<br>
+			<p>
+				Zhaoliang Lun, Evangelos Kalogerakis, Alla Sheffer,<br>
+				&quot;Elements of Style: Learning Perceptual Shape Style Similarity&quot;,<br>
+				<em>ACM Transactions on Graphics (Proc. ACM SIGGRAPH 2015)</em>
+				<a href="StyleSimilarity.bib">[Bibtex]</a>
+			</p>
+		</td>
+	</tr></table>
+	<h2>Video</h2>
+	<iframe id="video" title="YouTube video player" src="https://www.youtube.com/embed/PWqZwpHQtnE" allowfullscreen></iframe>
+	<h2>&nbsp;</h2>
+	<h2>Supplementary Material</h2>
+	<p id="text">
+		The following archive contains queries generated for our data sets and learned weights for elementary distances and saliences.
+	</p>
+	<p>&#x25BA;<a href="https://drive.google.com/file/d/17I7YmgQ4W-n7pI5nR1-mHEUknODNffGu/view?usp=sharing">StyleSupplementary.7z</a>, 142 MB</p>
+	<h2>Code</h2>
+	<p id="text">
+		The following archive contains source codes for our algorithm. Please read the readme file within the archive for more details.
+	</p>
+	<p>&#x25BA;<a href="http://antares.cs.umass.edu/project_data/StyleSimilarity/Code.7z">Code.7z</a>, 4 MB <i>(Updated: 2015 / 12 / 29)</i></p>
+	<p>&#x25BA;<a href="https://github.com/happylun/StyleSimilarity">Fork me on GitHub.</a></p>
+	<h2>Data</h2>
+	<p id="text">
+		The following archives contain data set used in our algorithm. Archive <i>Data-all.7z</i> contains all data used in our experiments including shape models and user study responses. Archive <i>Data-demo.7z</i> contains minimum data to run our pipeline. Please read the readme file within the archives for more details.
+	</p>
+	<p>&#x25BA;<a href="https://drive.google.com/file/d/11H2VGFq4DrxABiZNZRA3VUO-9jSJ97Fg/view?usp=sharing">Style-Data-all.7z</a>, 179 MB</p>
+	<p>&#x25BA;<a href="Data-demo.7z">Data-demo.7z</a>, 0.7 MB</p>
+	<h2>Presentation</h2>
+	<p id="text">
+		The following files contain the slides presented in SIGGRAPH 2015 at Los Angeles.
+	</p>
+	<p>&#x25BA;<a href="Presentation.pptx">Presentation.pptx</a>, 40 MB</p>
+	<p>&#x25BA;<a href="Presentation.pdf">Presentation.pdf</a>, 2 MB</p>
+	<h2>Copyright</h2>
+	<p id="text">
+		All 3D shape models are downloaded from the Internet and the original authors hold the copyright of the models. The user study data was obtained by us via Amazon Mechanical Turk service and it is provided freely. This data set is provided for the convenience of academic research only
+	</p>
+	<h2>Acknowledgments</h2>
+	<p id="text">
+		Kalogerakis gratefully acknowledges support from NSF (CHS-1422441). Sheffer gratefully acknowledges support from NSERC and GRAND NCE. We thank Nicholas Vining and Mikhail Bessmeltsev for their valuable help in editing the paper and the video. We thank the anonymous reviewers for their comments.
+	</p>
+	<div id="footer"><a href="http://people.cs.umass.edu/~kalo/">back to Evangelos Kalogerakis' page</a></div>
+</div>
+</body>
+</html>

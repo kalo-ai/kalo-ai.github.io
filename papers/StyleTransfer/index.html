@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Functionality Preserving Shape Style Transfer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link media="all" href="style.css" type="text/css" rel="stylesheet">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-66871155-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+<div id="content">
+	<h1>
+		Functionality Preserving Shape Style Transfer
+	</h1>
+	<div id="header">
+		<p id="people">
+			<a href="https://people.cs.umass.edu/~zlun/">Zhaoliang Lun</a>,
+			<a href="https://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a>,
+			<a href="https://people.cs.umass.edu/~ruiwang/">Rui Wang</a>,
+			<a href="https://www.cs.ubc.ca/~sheffa/">Alla Sheffer</a>
+		</p>	
+		<p><em>ACM Transactions on Graphics (Proc. ACM SIGGRAPH ASIA 2016)</em></p>
+		<p><strong>Preprint:  <a href="StyleTransfer.pdf">[PDF]</a></strong></p>
+	</div>
+	<img id="teaser" alt="teaser" src="StyleTransfer_teaser.jpg">
+	<h2>Abstract</h2>
+	<p id="text">
+		When geometric models with a desired combination of style and functionality are not available, they currently need to be created manually. We facilitate algorithmic synthesis of 3D models of man-made shapes which combines user-specified  style, described via an <i>exemplar</i> shape, and functionality, encoded by a functionally different <i>target</i> shape. Our method automatically transfers the style of the exemplar to the target, creating the desired combination. The main challenge in performing cross-functional style transfer is to implicitly separate an object's style from its function: while stylistically the output shapes should be as close as possible to the exemplar, their original functionality and structure, as encoded by the target, should be strictly preserved. Recent literature point to the presence of similarly shaped, salient <i>geometric elements</i> as a main indicator of stylistic similarity between 3D shapes. We therefore transfer the exemplar style to the target via a sequence of element-level operations. We allow only <i>compatible</i> operations, ones that do not affect the target functionality. To this end, we introduce a cross-structural element compatibility metric that  estimates the impact of each operation on the edited shape. Our metric is based on the global context and coarse geometry of evaluated elements, and is trained on databases of 3D objects. We use this metric to cast style transfer as a tabu search, which incrementally updates the target shape using compatible operations, progressively increasing its style similarity to the exemplar while strictly maintaining its functionality at each step. We evaluate our framework across a range of man-made objects including furniture, light fixtures, and tableware, and perform a number of user studies confirming that it produces convincing outputs combining the desired style and function.   
+	</p>
+	<h2>Paper</h2>
+	<table><tr>
+		<td>
+			<a href="StyleTransfer.pdf">
+				<img id="thumbnail" alt="paper thumbnail" src="StyleTransfer_thumbnail.jpg">
+			</a>
+		</td>
+		<td>
+			&#x25BA;<a href="StyleTransfer.pdf">StyleTransfer.pdf</a>, 14 MB<br>
+			<br>
+			<p>
+				Zhaoliang Lun, Evangelos Kalogerakis, Rui Wang, Alla Sheffer,<br>
+				&quot;Functionality Preserving Shape Style Transfer&quot;,<br>
+				<em>ACM Transactions on Graphics (Proc. ACM SIGGRAPH ASIA 2016)</em>
+				<a href="StyleTransfer.bib">[Bibtex]</a>
+			</p>
+		</td>
+	</tr></table>
+	<h2>Video</h2>
+	<iframe id="video" title="YouTube video player" src="https://www.youtube.com/embed/R-1jhH4sbRk" allowfullscreen></iframe>
+	<h2>&nbsp;</h2>
+	<h2>Supplementary Material</h2>
+	<p id="text">
+		The following archive contains more style transfer results generated from our algorithm and extra user study data. Please refer to our paper for more details.
+	</p>
+	<p>&#x25BA;<a href="http://antares.cs.umass.edu/project_data/StyleSynthesis/supplementary.7z">supplementary.7z</a>, 28 MB</p>
+	<h2>Code</h2>
+	<p id="text">
+		The following archive contains source codes for our algorithm. Please read the readme file within the archive for more details.
+	</p>
+	<p>&#x25BA;<a href="http://antares.cs.umass.edu/project_data/StyleSynthesis/code.7z">code.7z</a>, 5 MB</p>
+	<p>&#x25BA;<a href="https://github.com/happylun/StyleTransfer">Fork me on GitHub.</a></p>
+	<h2>Data</h2>
+	<p id="text">
+		The following archive contains data for demonstrating the style transfer algorithm. Please read the readme file within the archive for more details.
+	</p>
+	<p>&#x25BA;<a href="http://antares.cs.umass.edu/project_data/StyleSynthesis/data.7z">data.7z</a>, 1 MB</p>
+	<h2>Presentation</h2>
+	<p id="text">
+		The following files contain the slides presented in SIGGRAPH ASIA 2016 at Macao.
+	</p>
+	<p>&#x25BA;<a href="Presentation.pptx">Presentation.pptx</a>, 31 MB</p>
+	<p>&#x25BA;<a href="Presentation.pdf">Presentation.pdf</a>, 10 MB</p>
+	<h2>Copyright</h2>
+	<p id="text">
+		All 3D shape models used in this project are downloaded from the Internet and the original authors hold the copyright of the models. The code and data are provided for the convenience of academic research only.
+	</p>
+	<h2>Acknowledgments</h2>
+	<p id="text">
+		Kalogerakis and Wang gratefully acknowledge support from NSF (CHS-1422441, CHS-1617333, IIS-1423082).
+		Sheffer gratefully acknowledges support from NSERC discovery and DAS grants. We thank Nicholas Vining
+		for proofreading the paper and narrating the video, Mikhail Bessmeltsev for useful suggestions on the
+		figures, and the anonymous reviewers for their comments.
+	</p>
+	<div id="footer"><a href="http://people.cs.umass.edu/~kalo/">back to Evangelos Kalogerakis's page</a></div>
+</div>
+</body>
+</html>

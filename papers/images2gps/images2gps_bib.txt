@@ -1,0 +1,6 @@
+@inproceedings{Kalogerakis:2009:images2gps,
+  Author    = {Evangelos Kalogerakis and Olga Vesselova and James Hays and Alexei A. Efros and Aaron Hertzmann},
+  Title     = {Image Sequence Geolocation with Human Travel Priors},
+  Booktitle = {Proceedings of the {IEEE} International Conference on Computer Vision ({ICCV '09})},
+  Year      = {2009},
+}

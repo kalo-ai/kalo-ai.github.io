@@ -1,0 +1,6 @@
+@inproceedings{Kalogerakis:2017:ShapePFCN,
+    Author    = {Evangelos Kalogerakis and Melinos Averkiou and Subhransu Maji and Siddhartha Chaudhuri},
+    Title     = {3{D} Shape Segmentation with Projective Convolutional Networks},
+    Booktitle = {Proc. IEEE Computer Vision and Pattern Recognition (CVPR)},
+    Year      = {2017}
+}

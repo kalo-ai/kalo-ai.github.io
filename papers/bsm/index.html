@@ -1,0 +1,58 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Analysis and synthesis of 3D shape families via deep-learned generative models of surfaces</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link media="all" href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+	<h1>
+		Analysis and synthesis of 3D shape families via deep-learned generative models of surfaces
+	</h1>
+	<div id="header">
+		<p id="people">
+			<a href="http://people.cs.umass.edu/~hbhuang/">Haibin Huang</a>,
+			<a href="http://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a>,
+			<a href="http://openscholar.cs.umass.edu/marlin/">Benjamin Marlin</a>
+		</p>	
+       <p><span class="Affiliation">University of Massachusetts Amherst</span></p>
+
+	</div>
+	<img id="teaser" alt="teaser" src="bsm_teaser.jpg">
+	<h2>Abstract</h2>
+	<p id="text">
+		We present a method for joint analysis and synthesis of geometrically diverse 3D shape families. Our method first learns part-based templates such that an optimal set of fuzzy point and part correspondences is computed between the shapes of an input collection based on a probabilistic deformation model.
+		In contrast to previous template-based approaches, the geometry and deformation parameters of our part-based templates are learned from scratch. Based on the estimated shape correspondence, our method also learns a probabilistic generative model that hierarchically captures statistical relationships of corresponding surface point positions and parts as well as their existence in the input shapes. 
+		A deep learning procedure is used to capture these hierarchical relationships. The resulting generative model is used to produce control point arrangements that drive shape synthesis by combining and deforming parts from the input collection. The generative model also yields compact shape descriptors that are used to perform fine-grained classification. Finally, it can be also coupled with the probabilistic deformation model to further improve shape correspondence. 
+		We provide qualitative and quantitative evaluations of our method for shape correspondence, segmentation, fine-grained classification and synthesis. Our experiments demonstrate superior correspondence and segmentation results than previous state-of-the-art approaches.</p>
+	<h2>Paper</h2>
+	<p><a href="bsm.pdf"><img class="PaperFigure" alt="paper thumbnail" src="bsm_paper.jpg"></a></p>
+       <a href="BetaShapeMachine.bib">[Bibtex]</a>
+       
+       <h2>Supplementary Material</h2>
+	<p><a href="http://antares.cs.umass.edu/project_data/bsm/Correspondence.7z"> Correspondence.7z</a>,1.4GB</p>
+    <p>This archive contains the correspondence results from our method for BCHP dataset. Please see readme.txt in this archive for more information</p>
+       <p><a href="http://antares.cs.umass.edu/project_data/bsm/Segmentation.7z"> Segmentation.7z</a>, 180MB</p>
+    <p>This archive contains the ground-truth segmentations of the BCHP dataset and segmentation results from our method. Please see readme.txt in this archive for more information</p>
+       <p><a href="http://antares.cs.umass.edu/project_data/bsm/FineGrainedClassification.7z"> FineGrainedClassification.7z</a>, 24MB</p>
+    <p>This archive contains the fine-grained classification dataset with training and test split, our results and learned descriptors. Please see readme.txt in this archive for more information</p>
+       <p><a href="SourceCode.7z"> SourceCode.7z</a></p>
+    <p>This archive contains source code for our deep-learned model (Beta Shape Machine).</p>
+       <p><a href="https://www.dropbox.com/s/ucxzlt75anxxa5v/bsm_share.zip?dl=0"> bsm_train.zip</a>, 3GB</p>
+    <p>This archive contains part of the training data for our BSM, with 3D mesh obj files, sample points and segmentation. It also provide an example code for sampling the trained BSM.</p>
+
+  	<h2>Presentation</h2>
+	<p><a href="bsm_slides.pdf"> Presentation</a></p>
+       <p><a href="presentation.7z"> Video </a></p>
+	<h2>Acknowledgments</h2>
+	Kalogerakis gratefully acknowledges support from NSF (CHS-1422441). We thank Qi-xing Huang and Vladimir Kim for sharing data from their
+methods. We thank Siddhartha Chaudhuri and anonymous reviewers for valuable comments. We thank Szymon Rusinkiewicz for distributing the trimesh2 library.<div id="footer">
+            Copyright 2015 Haibin Huang and Evangelos Kalogerakis | Last updated: 06/09/2015
+        </div>
+        <div class="FooterLine">
+        </div>
+</div>
+</body>
+</html>

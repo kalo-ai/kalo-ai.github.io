@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Data-driven curvature for real-time line drawing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link media="all" href="style.css" type="text/css" rel="StyleSheet">
+<style type="text/css" media="all">
+IMG {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 10px;
+	FLOAT: right;
+	PADDING-BOTTOM: 10px;
+	PADDING-TOP: 10px
+}
+#content {
+	MARGIN-LEFT: auto;
+	width:expression(document.body.clientWidth > 900? "900px": "auto" );
+	MARGIN-RIGHT: auto;
+	TEXT-ALIGN: left;
+	max-width: 900px
+}
+BODY {
+	TEXT-ALIGN: center
+}
+</style>
+</head>
+<body>
+<div id="content">
+    <h1 align="center"><strong>Data-driven curvature for real-time line drawing
+   </strong></h1>
+    <img align="middle" src="ddcurvature_teaser.jpg">
+  <h2>People</h2>
+  <ul id="people">
+    <li><a href="http://www.dgp.toronto.edu/%7Ekalo/">Evangelos Kalogerakis</a> </li>
+    <li><a href="http://www.dgp.toronto.edu/%7Ederek">Derek Nowrouzezahrai</a> </li>    
+    <li><a href="http://www.dgp.toronto.edu/%7Epsimari">Patricio Simari</a></li>
+    <li><a href="http://www.dgp.toronto.edu/%7Emccrae/">James McCrae</a> </li>
+    <li><a href="http://www.dgp.toronto.edu/%7Ekaran">Karan Singh</a> </li>    
+    <li><a href="http://www.dgp.toronto.edu/%7Ehertzman">Aaron Hertzmann</a> </li>        
+  </ul>
+  <h2>Abstract</h2>
+  <p align="justify">This paper presents a method for real-time line drawing of deforming objects. Object-space line
+    drawing algorithms for many types of curves, including suggestive contours, highlights, ridges
+    and valleys, rely on surface curvature and curvature derivatives. Unfortunately, these curvatures
+    and their derivatives cannot be computed in real-time for animated, deforming objects. In a
+    preprocessing step, our method learns the mapping from a low-dimensional set of animation
+    parameters (e.g., joint angles) to surface curvatures for a deforming 3D mesh. The learned model
+    can then accurately and efficiently predict curvatures and their derivatives, enabling real-time
+    object-space rendering of suggestive contours and other such curves. This represents an order-
+    of-magnitude speed-up over the fastest existing algorithm capable of estimating curvatures and
+    their derivatives accurately enough for many different types of line drawings. The learned model
+    can generalize to novel animation sequences, and is also very compact, typically requiring a few
+    megabytes of storage at run-time. We demonstrate our method for various types of animated
+    objects, including skeleton-based characters, cloth simulation and blend-shape facial animation,
+  using a variety of non-photorealistic rendering styles.</p>
+  <br>
+<a href="ddcurvature.pdf"><img style="padding: 0px 30px 10px 10px; float: left;" alt="paper thumbnail" src="ddcurvature_thumbnail.jpg"></a>
+  <h2>&nbsp;</h2>
+  <h2>Paper</h2>
+  <a href="ddcurvature.pdf">ddcurvature.pdf</a>, 4.7MB<br>
+  <br>
+  <h3>Citations</h3>      
+  <p> Evangelos Kalogerakis, Derek Nowrouzezahrai, Patricio Simari, James McCrae, Aaron Hertzmann, Karan Singh, &quot;  Data-driven curvature for real-time line drawing of dynamic scenes&quot;, <em>ACM Transactions on Graphics</em>, Volume 28, Issue 1, January 2009<br>
+    <br>
+  <a href="ddcurvature_bib.txt">Bibtex</a></p>     
+  
+  <h2>&nbsp;</h2><br><br>
+  
+  <h2>Presentation</h2>      
+  <p><a href="ddcurvature_siggraph.zip">ddcurvature_siggraph.zip</a>, 21MB. <br>
+  This archive contains the Siggraph 2009 presentation of our method. Unzip all the files (including the .wmv files) of the archive into the same folder so that the presentation plays the videos as well. </p>
+
+  <h2>Video</h2>
+  This video presents the real-time line drawing results of our method.<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/LlAcH0bDa3g?si=sevnB_LlKpqnw5Mq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+  <h2>Acknowledgements</h2>
+  <p>We thank Szymon Rusinkiewicz for providing his rtsc and trimesh2 code online.
+    We also thank Robert Wang and Joel Anderson for providing us with animation test
+    sequences, Michael Comet for the muscle arm model, Chris
+    Landreth for the Angela dataset,  Alexis Angelidis for the Master Pai mesh, Eitan Grinspun and Rony Goldenthal for the horse and draping cloth. We
+    finally thank the anonymous reviewers for their insightful and helpful comments which greatly
+    contributed to the clarity of the paper. The motion capture data used on the Fit
+    and Master Pai datasets was obtained from the CMU Motion Capture database.
+  </p>
+  <p>This work was funded by the Alfred P. Sloan Foundation, the Canada Foundation
+    for Innovation (CFI), the Canadian Institute for Advanced Research (CIFAR),
+    Microsoft Research, the National Sciences and Engineering Research Council of
+    Canada (NSERC), the Ontario Ministry of Research and Innovation (MRI), the
+    Ontario Ministry of Education and Training and the Canadian Research Network
+    for Mathematics of Information Technology and Complex Systems (MITACS). </p>
+<div id="footer"><a href="http://www.dgp.toronto.edu/%7Ekalo">back to Evangelos Kalogerakis' page</a></div>  
+</div>
+</body>
+</html>

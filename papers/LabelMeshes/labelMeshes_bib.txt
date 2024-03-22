@@ -1,0 +1,8 @@
+@article{Kalogerakis:2010:labelMeshes,
+  Author    = {Evangelos Kalogerakis and Aaron Hertzmann and Karan Singh},
+  Title     = {{L}earning {3}{D} {M}esh {S}egmentation and {L}abeling},
+  Journal   = {ACM Transactions on Graphics},
+  Volume    = {29},
+  Number    = {3},
+  Year = {2010},
+}

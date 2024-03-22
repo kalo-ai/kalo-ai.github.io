@@ -1,0 +1,11 @@
+Error in downloading the gigantic files from dropbox website? You are not alone! (https://www.dropboxforum.com/t5/Installation-and-desktop-app/download-large-file-using-browser-fails-before-end/td-p/144419)
+
+Here is my solution:
+1. Use a download manager such as Turbo Download Manager (it has chrome/firefox extension: https://add0n.com/turbo-download-manager.html).
+2. Download the file using this download manager.
+3. When the download pauses (likely the connection is closed), refresh the dropbox download page and try to download again.
+4. When the new download starts, look up the mirror download link for this new download. Now you can cancel this new download.
+5. Update the mirror link for the old download. The old download can now be resumed from where it failed.
+6. If it fails again, repeat step 3~5.
+
+Good luck!

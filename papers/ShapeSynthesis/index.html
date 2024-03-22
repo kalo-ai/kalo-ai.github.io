@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>A Probabilistic Model of Component-Based Shape Synthesis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link media="all" href="style.css" type="text/css" rel="stylesheet">
+<style type="text/css" media="all">
+img {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 10px;
+	FLOAT: right;
+	PADDING-BOTTOM: 40px;
+	PADDING-TOP: 20px
+}
+#content {
+	MARGIN-LEFT: auto;
+	WIDTH: expression(document.body.clientWidth > 925? "925px": "auto" );
+	MARGIN-RIGHT: auto;
+	TEXT-ALIGN: left;
+	max-width: 925px
+}
+body {
+	TEXT-ALIGN: center
+}
+</style>
+</head>
+<body>
+<div id="content">
+  <h1 align="center">A Probabilistic Model of Component-Based Shape Synthesis<br>
+  </h1>
+  <p align="center"><a href="http://graphics.stanford.edu/~kalo"><br>
+  Evangelos Kalogerakis</a>,<a href="http://graphics.stanford.edu/~sidch/"> Siddhartha Chaudhuri</a>, <a href="http://ai.stanford.edu/~koller/">Daphne Koller</a>, <a href="http://vladlen.org/">Vladlen Koltun</a></p>
+  <p align="center"> <em>ACM Transactions on Graphics, Vol. 31, No. 4, July 2012 (Proc. SIGGRAPH 2012)</em></p>
+  <p align="center"><strong>Preprint:  <a href="ShapeSynthesis.pdf">[PDF]</a></strong></p>
+  <img alt="teaser" align="middle" src="ShapeSynthesis_teaser.jpg">
+  <h2>&nbsp;</h2>
+  <h2>&nbsp;</h2>
+  <h2>&nbsp;</h2>
+<p align="justify">The creation of compelling three-dimensional content is a central problem in computer graphics. Many applications such as games and virtual worlds require large collections of three-dimensional shapes for populating environments, and modeling each shape individually can be tedious even with the best interactive tools. This is particularly true for small development teams that lack 3D modeling expertise and resources. Such users can benefit from tools that automatically synthesize a variety of new, distinct shapes from a given domain.</p>
+  <p align="justify">Tools for automatic synthesis of shapes from complex real-world domains must understand what characterizes the structure of shapes within such domains. Developing formal models of this structure is challenging, since shapes in many real-world domains exhibit complex relationships between their components. Consider sailing ships. Sailing ships vary in the size and type of hull, keel and masts, as well as in the number and configuration of masts. Different types of sailing ships constrain these factors differently. For example, yawls are small crafts with a shallow hull that supports two masts with large, triangular sails. Caravels are small, highly maneuverable ships carrying two or three masts with triangular sails. Galleons are multi-decked vessels with much larger hulls and primarily square sails on three or more masts. Various geometric, stylistic and functional relationships influence the selection and placement of individual components to ensure that the final shape forms a coherent whole. Similarly complex networks of relationships characterize other domains such as airplanes, automobiles, furniture, and various biological forms. </p>
+  <p align="justify">The focus of our work is on designing a compact representation of these relationships that can be learned without supervision from a limited number of examples. Our primary contribution is a generative probabilistic model of shape structure that can be trained on a set of compatibly segmented shapes from a particular domain. The model compactly represents the structural variability within the domain, without manual tuning or any additional specification of the domain. Given a trained model, plausible new shapes from the domain can be automatically synthesized by combining existing components, subject to optional high-level constraints. The key idea in the design of the model is to relate probabilistic relationships between geometric and semantic properties of shape components to learned latent causes of structural variability, both at the level of individual component categories and at the level of the complete shape.</p>
+  <p align="justify">We demonstrate two applications of the presented model. First, it can be used to amplify an existing shape database. Given a limited number of example shapes, the model can synthesize a large number of new shapes, expanding the size of the database by an order of magnitude. For example, given a hundred airplanes, the model can automatically synthesize over a thousand new airplanes, each distinct from those in the input set (Figure 1). Second, the model enables interactive shape synthesis interfaces that allow rapid creation of plausible shapes subject to high-level constraints.</p>
+<p align="justify">&nbsp;</p>
+
+  <a href="ShapeSynthesis.pdf"><img style="padding: 0px 30px 10px 10px; float: left;" alt="paper thumbnail" src="ShapeSynthesis_thumbnail.jpg"></a>
+  <h2>Paper</h2>
+  <a href="ShapeSynthesis.pdf">ShapeSynthesis.pdf</a>, 4MB<br>
+  <br>
+  <p>Evangelos Kalogerakis, Siddhartha Chaudhuri, Daphne Koller, Vladlen Koltun, &quot;A Probabilistic Model of Component-Based Shape Synthesis&quot;,
+  <em>ACM Transactions on Graphics, Vol. 31, No. 4, July 2012 (also presented in SIGGRAPH 2012, Los Angeles, USA)</em> <a href="ShapeSynthesis.bib">[Bibtex]</a> </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h2>Video<br>
+  </h2>
+<iframe title="YouTube video player" width="728" height="510" src="http://www.youtube.com/embed/VcK2z6AOZcA" frameborder="1px" allowfullscreen></iframe>
+
+
+<h2>&nbsp;</h2>
+<h2>Results</h2>
+  <p>The following archive contains images of our training and synthesized shapes for each of our datasets. Due to license restrictions by <a href="http://digimation.com/">Digimation</a>, we cannot  release  the output meshes here. If you acquire the <a href="http://digimation.com/">Digimimation &quot;Modelbank&quot; and &quot;The Archive&quot;</a> and confirm with Digimation that we can share the output models with your institution, then we will send them to you. <a href="https://drive.google.com/file/d/1jS22J2i82IF8F_s1Siu82auHXsUXh9uB/view?usp=sharing"><br>
+  ShapeSynthesisResults.7z</a>, 105MB. </p>
+  <h2>  Code</h2>
+  <p>The following archive contains the implementation of the probabilistic model. <br>
+    <a href="SGML.7z">SGML.7z</a>, 17MB<br>
+  </p>
+  <h2>Presentation</h2>
+  <p>Here is the Siggraph 2012 presentation of the paper: <a href="gen_prob_model_of_shapes_web.pptx"><br>
+    Microsoft Powerpoint version of presentation</a>, 10.9MB  <br>
+    <a href="gen_prob_model_of_shapes_web.pdf">Adobe PDF version of presentation</a>, 3.4MB</p>
+<h2>Acknowledgements</h2>
+ We are grateful to Aaron Hertzmann, Sergey Levine, and Philipp Kr&auml;henb&uuml;l for their comments on this paper, and to Tom Funkhouser for helpful discussions. We also thank Szymon Rusinkiewicz for the Trimesh2 library. This research was conducted in conjunction with the Intel Science and Technology Center for Visual Computing, and was supported in part by KAUST Global Collaborative Research and by NSF grants SES-0835601 and CCF-0641402.
+ <div id="footer"><a href="http://graphics.stanford.edu/~kalo">back to Evangelos Kalogerakis' page</a></div>
+</div>
+</body>
+</html>

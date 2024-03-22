@@ -1,0 +1,7 @@
+@article{Chaudhuri:2011:probreasoningmodeling,
+  author = {Siddhartha Chaudhuri and Evangelos Kalogerakis and Leonidas Guibas and Vladlen Koltun},
+  title = {Probabilistic Reasoning for Assembly-Based {3D} Modeling},
+  journal = {ACM Transactions on Graphics},
+  year = {2011},
+}
+  

@@ -1,0 +1,6 @@
+@inproceedings{Kalogerakis:2007:robustCurvature,
+  Author    = {Evangelos Kalogerakis and Patricio Simari and Derek Nowrouzezahrai and Karan Singh},
+  Title     = {Robust statistical estimation of curvature on discretized surfaces},
+  Booktitle = {Proceedings of the {E}urographics/{ACM} {S}iggraph {S}ymposium on {G}eometry {P}rocessing},
+  Year      = {2007},
+}

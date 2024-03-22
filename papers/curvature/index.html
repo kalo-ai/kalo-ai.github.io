@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Robust Statistical Estimation of Differential Properties on Surfaces</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link media="all" href="style.css" type="text/css" rel="StyleSheet">
+<style type="text/css" media="all">
+IMG {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 10px;
+	FLOAT: right;
+	PADDING-BOTTOM: 10px;
+	PADDING-TOP: 10px
+}
+#content {
+	MARGIN-LEFT: auto;
+	width:expression(document.body.clientWidth > 900? "900": "auto" );
+	MARGIN-RIGHT: auto;
+	TEXT-ALIGN: left;
+	max-width: 900px;
+}
+BODY {
+	TEXT-ALIGN: center
+}
+</style>
+</head>
+<body>
+<div id="content">
+    <h1 align="center"><strong>Robust Statistical Estimation of Curvature on Surfaces</strong></h1>
+    <img align="middle" src="curvature_teaser.jpg">
+  <h2>People</h2>
+  <ul id="people">
+    <li><a href="http://www.dgp.toronto.edu/%7Ekalo/">Evangelos Kalogerakis</a> </li>
+    <li><a href="http://www.dgp.toronto.edu/%7Epsimari">Patricio Simari</a></li>
+    <li><a href="http://www.dgp.toronto.edu/%7Ederek">Derek Nowrouzezahrai</a> </li>
+    <li><a href="http://www.dgp.toronto.edu/%7Ekaran">Karan Singh</a> </li>    
+  </ul>
+  <h2>Abstract</h2>
+  <p align="justify">A robust statistics approach to curvature estimation on discretely sampled surfaces. The method exhibits accuracy, stability and consistency even for noisy, non-uniformly
+    sampled surfaces with irregular configurations. Within an M-estimation framework, the algorithm is able to reject
+    noise and structured outliers by sampling normal variations in an adaptively reweighted neighborhood around
+    each point. The algorithm can be used to reliably derive higher order differential attributes and even correct noisy
+    surface normals while preserving the fine features of the normal and curvature field. The approach is compared
+    with state-of-the-art curvature estimation methods and shown to improve accuracy by up to an order of magnitude
+    across ground truth test surfaces under varying tessellation densities and types as well as increasing degrees of
+    noise. The benefits of a robust statistical estimation of curvature are illustrated by applying it to the popular
+  applications of mesh segmentation and suggestive contour rendering.</p>
+  <p align="justify">We also present a robust framework for extracting lines of curvature from point clouds.
+    First, we show a novel approach to denoising the input point cloud using robust
+    statistical estimates of surface normal and curvature which automatically rejects
+    outliers and corrects points by energy minimization. Then the lines of curvature are
+    constructed on the point cloud with controllable density. Our approach is applicable
+    to surfaces of arbitrary genus, with or without boundaries, and is statistically robust
+    to noise and outliers while preserving sharp surface features. We show our approach
+    to be eective over a range of synthetic and real-world input datasets with varying
+    amounts of noise and outliers. The extraction of curvature information can benet
+    many applications in CAD, computer vision and graphics for point cloud shape
+    analysis, recognition and segmentation. Here, we show the possibility of using the
+    lines of curvature for feature-preserving mesh construction directly from noisy point
+  clouds.</p>
+  <br>
+<a href="CurvatureSGP.pdf"><img style="padding: 0px 30px 10px 10px; float: left;" alt="paper thumbnail" src="curvatureSGP_thumbnail.jpg"></a>
+  <h2> Paper</h2>
+  <a href="CurvatureSGP.pdf">CurvatureSGP.pdf</a>, 10.1MB<br>
+  This paper introduces the robust statistical estimation of curvature on polygon meshes.<br>
+  <br>
+  <h3>Citation</h3>
+  <p>Evangelos Kalogerakis, Patricio Simari, Derek Nowrouzezahrai, Karan Singh, &quot;Robust statistical estimation of curvature on discretized surfaces&quot;, <em>Proceedings of the Eurographics/ACM Siggraph Symposium on Geometry Processing (SGP '07)</em>, pp. 13-22, Barcelona, Spain, July 4-6 2007</p>
+  <p>Evangelos Kalogerakis,   &quot;Robust statistical estimation of curvature on discretized surfaces&quot; , MSc Thesis, University of Toronto, 2006<br>
+    <br>
+    <a href="robustCurvatureSGP_bib.txt">Bibtex</a></p>
+
+  <h2>&nbsp;</h2><br><br>
+
+<a href="CurvatureCAD.pdf"><img style="padding: 0px 30px 10px 10px; float: left;" alt="paper thumbnail" src="curvatureCAD_thumbnail.jpg"></a>
+  <h2>Paper</h2>
+  <a href="CurvatureCAD.pdf">CurvatureCAD.pdf</a>, 13.7MB<br>
+  This article focuses on the robust statistical estimation of curvature on point clouds, their curvature-driven  denoising and  the extraction of lines of curvature from them.<br>
+  <br>
+  <h3>Citation</h3>
+  <p>Evangelos Kalogerakis,  Derek Nowrouzezahrai, Patricio Simari, Karan Singh,  &quot;Extracting lines of curvature from noisy point clouds&quot; ,<em> Special Issue of the Computer-Aided Design journal on Point-Based Computational Techniques</em>,   Volume 41, Number 4 (April 2009), pp. 282-292 <br><br>
+  <a href="robustCurvatureCAD_bib.txt">Bibtex</a></p>
+   
+  <h2>&nbsp;</h2><br><br>
+  
+  <h2>Presentation</h2>
+  <a href="SGP_Presentation.ppt">SGP_Presentation.ppt</a>, 5.46MB. <br>
+  Presented in the SGP conference.
+  
+  <p>&nbsp;</p>
+  <h2>Demo executable</h2>
+  <a href="robust_curvature.zip">robust_curvature.zip</a>, 1.43MB. <br>
+  <p align="justify">This Windows demo executable program estimates curvature for triangle meshes based on the method presented in the SGP paper (see  above).  Please <a href="robustCurvatureSGP_bib.txt">cite</a> the SGP paper if you use this executable for your project. </p>
+  <p align="justify"> This research prototype supports OFF files only.  You can get some help by typing  &quot;CurvatureX3 -?&quot;  (see also the FAQ section below). A quick example of use:  &quot;CurvatureX3 -dc -v mesh.off&quot;  (it will also compute derivatives of curvature  with verbose output and results are written in curv.txt). If the mesh is completely noiseless, you may also want to try  &quot;CurvatureX3 -n mesh.off&quot;  for faster results. The implementation is slow as it is not optimized and  is also based on the CGAL library. It may need several minutes and lots of memory to run for e.g. a 1M faces mesh. There are lots of improvements that I may perform in the future: a faster and less memory-consuming  implementation (e.g., based on the Trimesh2 library), an initial guess based on a one-ring discrete curvature estimate that may preserve sharp edges better, bugs correction etc. </p>
+  <p align="left"><strong>Frequently Asked Questions:</strong><strong><br>
+  </strong><em>- Question:&nbsp;</em>The program does not run.<br>
+  <em>- Answer:</em>&nbsp;Make sure you have BLAS.dll and LAPACK.dll in the same folder with the executable. Also try to install the  <a href="http://www.microsoft.com/downloads/details.aspx?familyid=A5C84275-3B97-4AB7-A40D-3802B2AF5FC2&displaylang=en">Microsoft Visual C++ Redistributable Package</a>. <br>
+  </p>
+  <p align="left"><em>- Question:&nbsp;</em>It says  &quot;Loaded mesh is empty or file format is not supported&quot;.<br>
+    <em>- Answer:</em>&nbsp;Make sure your loaded mesh is text OFF format. Make sure your mesh is manifold.&nbsp;<br>
+  </p>
+  <p align="left">-&nbsp;<em>Question:</em>&nbsp;Where are the results?<br>
+    <em>- Answer:&nbsp;</em>If you have not specified another output file name, they are in the curv.txt (in the same directory with the executable)</p>
+  <p align="left"><em>- Question:</em>&nbsp;I want to correct the mesh normals and principal curvature directions. How can I do it?<br>
+    <em>- Answer:&nbsp;</em><em>&nbsp;</em>Include the '-r' parameter (it's not used by default)</p>
+  <p align="left"><em>- Question:</em>&nbsp;How do I compute the derivatives of curvatures?<br>
+    <em>- Answer:&nbsp;</em>Include the '-dc' parameter (it's not used by default)<br>
+    <br>
+    <em>- Question:</em>&nbsp;The method does not seem to produce very accurate results for non-noisy meshes.<br>
+  <em>- Answer:&nbsp;</em>Try  &quot;CurvatureX3 -n your_mesh.off&quot; </p>
+  <p align="left">-&nbsp;<em>Question:&nbsp;</em>Why is it so slow?&nbsp;<br>
+    <em>- Answer:&nbsp;</em>It is because of the local optimization nature of the algorithm and some data structure overheads of the current beta version of the executable. If it is too slow for you, and you don't care very much about accuracy, you can limit the number of iterations (e.g use '-i=10' or '-i=5'). Also try to use light (edge-based) sampling (use parameter '-l'). The implementation is not  that optimized as well. <br>
+    <br>
+    <em>- Question:&nbsp;</em>Does your method have any statistical assumptions?<br>
+    <em>- Answer:&nbsp;</em>Yes, gaussian noise on points and normals.&nbsp;<br>
+    <br>
+    <em>- Question:&nbsp;</em>Does it work with other types of noise?<br>
+    <em>- Answer:&nbsp;</em>For laplacian noise, I saw again good behavior.&nbsp;In general, feel free to test it for various sampling and noise conditions. <br>
+    <br>
+    <em>- Question:&nbsp;</em>The program crashed. I found a bug. Something is wrong. I am puzzled by something.&nbsp;<br>
+    <em>- Answer:</em>&nbsp;The program is only a research prototype and is for demonstrative purposes. You may also contact the main author:&nbsp;<a href="mailto:kalo@dgp.toronto.edu">kalo@dgp.toronto.edu</a></p>
+  <p align="left"><em>- Question:&nbsp;</em>I am not satisfied by the results of your method.&nbsp;<br>
+  <em>- Answer:&nbsp;</em>The executable is beta version; it may also be still buggy. Also, try &quot;CurvatureX3 -?&quot; for help to check all the options..</p>
+
+	<p>&nbsp;</p>
+  <h2>Acknowledgements</h2>
+  <p align="justify">We thank Eitan Grinspun for providing us with tessellations for our test surfaces, Guillaume Lavou&eacute; for the executable of his method and Ryan Schmidt for the implicit surface dog model.  We  thank Nigel Morris and Kyros Kutulakos for the fish point cloud. We also thank Hanson Robotics for the Einstein's head dataset. We acknowledge the AIM@SHAPE 3D library and its authors for the use of 3D models and point clouds.  We would like to thank Aaron Hertzmann and Eugene Fiume for their useful comments on the paper. We acknowledge the CGAL library which was used in our demo implementation. </p>
+  <p align="justify"> This work has been funded by the National Sciences and Engineering Research Council of Canada (NSERC), the Ontario Ministry of Education and Training and the Canadian Research Network for Mathematics of Information Technology and Complex Systems (MITACS).    <br></p>  
+  
+  <div id="footer"><a href="http://graphics.stanford.edu/%7Ekalo">back to Evangelos Kalogerakis' page</a></div>
+
+
+</div>
+</body>
+</html>

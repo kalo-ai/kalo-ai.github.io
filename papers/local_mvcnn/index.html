@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Learning local shape descriptors with view-based convolutional networks</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link media="all" href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+	<h1>
+		<p>Learning Local Shape Descriptors from Part Correspondences </p> With Multi-view Convolutional Networks	</h1>
+	<div id="header">
+		<p id="people">
+			<a href="http://people.cs.umass.edu/~hbhuang/">Haibin Huang</a><sup>1</sup>,
+			<a href="http://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a><sup>1</sup>,
+			<a href="https://www.cse.iitb.ac.in/~sidch/">Siddhartha Chaudhuri</a><sup>2</sup>,
+			<a href="http://www.duygu-ceylan.com/">Duygu Ceylan</a><sup>3</sup>,
+			<a href="http://vovakim.com/">Vladimir G. Kim</a><sup>3</sup>,
+			<a href="http://www.meyumer.com/"> M. Ersin Yumer </a><sup>3</sup>
+			
+		</p>
+            <p>ACM Transactions on Graphics (TOG) 2017 (also presented in SIGGRAPH 2018).</p>	
+            <p><span class="Affiliation">University of Massachusetts Amherst<sup>1</sup></span> ,
+            <span class="Affiliation">Indian Institute of Technology Bombay<sup>2</sup></span>,
+            <span class="Affiliation">Adobe Research<sup>3</sup></span></p>
+  
+	</div>
+	<img id="teaser" alt="teaser" src="teaser.jpg">
+	<h2>Abstract</h2>
+	<p id="text">
+	We present a new local descriptor for 3D shapes, directly applicable to a wide range of shape analysis problems such as point correspondences, semantic segmentation, affordance prediction, and shape-to-scan matching. Our key insight is that the neighborhood of a point on a shape is effectively captured at multiple scales by a succession of progressively zoomed out views, taken from care fully selected camera positions. We propose a convolutional neural network that uses local views around a point to embed it to a multidimensional descriptor space, such that geometrically and semantically similar points are close to one another. To train our network, we leverage two extremely large sources of data. First, since our network processes 2D images, we repurpose architectures pre-trained on massive image datasets. Second, we automatically generate a synthetic dense correspondence dataset by part-aware, non-rigid alignment of a massive collection of 3D models. As a result of these design choices, our view-based architecture effectively encodes multi-scale local context and fine-grained surface detail. We demonstrate through several experiments that our learned local descriptors are more general and robust compared to state of the art alternatives, and have a variety of applications without any additional fine-tuning.</p>
+	<h2>Paper</h2>
+	<p><a href="https://arxiv.org/abs/1706.04496"><img class="PaperFigure" alt="paper thumbnail" src="points.jpg"></a></p>
+    <a href="mvcnn_point.bib">[Bibtex]</a>
+	<h2>Code</h2>  
+    <a href="https://drive.google.com/file/d/1g_Faj_E-EFj9-5YNtCu6wHI6jR_tzuGk/view?usp=sharing"> Code </a>  for local MVCNN descriptor , including 1) rendering 2) viewpoint generation 3) training and extracting feature with Caffe (python layer needed)
+<!--
+     <h2>Data</h2>
+		<p>The following archives contain the 3D models and the dense point correspondence we generated to train the LMVCNN</p>
+	<p><a href="http://neghvar.cs.umass.edu/public_data/haibin_huang_models.zip">Models.zip</a> 2GB</p>
+	<p><a href="http://neghvar.cs.umass.edu/public_data/haibin_huang_corr.zip">Corr.zip</a> 18GB</p>
+-->
+     <h2>Presentation</h2>
+		<p><a href="./LMVCNNs.pptx">Slides</a></p> <p><a href="./LMVCNNs.pdf">PDF</a></p>
+       <h2>Acknowledgments</h2>
+             Kalogerakis acknowledges support from NSF (CHS-1422441, CHS-1617333), NVidia and Adobe. Chaudhuri acknowledges support from Adobe and Qualcomm. Our experiments were performed in the UMass GPU cluster obtained under a grant from the Collaborative R&D Fund managed by the Massachusetts Technology Collaborative
+       <div id="footer"> 
+        </div>
+        <div class="FooterLine">
+        </div>
+</div>
+</body>
+</html>
