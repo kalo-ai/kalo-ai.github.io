@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>INF 417: Computer Vision</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link media="all" href="style.css" type="text/css" rel="stylesheet">
+
+  <style type="text/css" media="all">
+    /* Keep your existing image float rule for other images on the page */
+    img {
+      padding-right: 0px;
+      padding-left: 10px;
+      float: right;
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+
+    /* Override float for the teaser so it sits centered under the title */
+    #teaser {
+      float: none;
+      display: block;
+      margin: 0 auto 10px auto;
+      padding: 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    #content {
+      margin-left: auto;
+      /* NOTE: expression(...) is an old IE-only hack; kept as-is to avoid content changes */
+      width: expression(document.body.clientWidth > 925 ? "925px" : "auto");
+      margin-right: auto;
+      text-align: left;
+      max-width: 925px;
+    }
+
+    body { text-align: center; }
+  </style>
+</head>
+
+<body>
+<div id="content">
+
+  <h1 align="center">
+    INF 417: <br>
+    Computer Vision<br>
+  </h1>
+
+  <!-- Moved image OUTSIDE the H1 so it appears under the title -->
+  <img id="teaser" alt="teaser" src="teaser.png">
+
+  <h3>
+    <hr>
+    Instuctor:<br>
+    <span style="color: #1200B4">Evangelos Kalogerakis (kalogerakis AT tuc DOT gr)</span> <br>
+    <br>
+    Meeting times: <br>
+    <span style="color: #1200B4">Tuesdays + Thursdays 6-8pm ET</span> <br>
+  </h3>
+
+  <h3>
+    Location:<br>
+    <span style="color: #1200B4">Thelma Mavridou <span lang="en">Amphitheatre</span></span><br>
+    <span style="color: #FF0004"> Students can also join remotely - check moodle.tuc.gr for zoom link</span> <br>
+    <br>
+    Lecture Notes &amp; Announcements &amp; Other Information: <br>
+    <span style="color: #FF0004">Check moodle.tuc.gr</span>
+  </h3>
+
+  <h3><hr></h3>
+
+  <h2>Course Objectives</h2>
+  <p>
+    This course covers the fundamental principles and methodologies of computer vision, with emphasis on modern AI-based visual perception systems. Topics include image formation and photometric modeling; camera geometry and calibration; light and shading; image filtering and resampling; image pyramids; edge detection; feature detection and matching; image alignment and robust estimation (RANSAC); depth recovery from stereo; multi-view geometry; structure from motion; motion estimation and optical flow. The course further covers learning-based image understanding, including convolutional neural networks, vision transformers, visual representation learning (self-supervised / contrastive learning), image classification, object detection, and image segmentation. Advanced topics include open-vocabulary recognition, vision–language models, depth estimation, 3D reconstruction, and deep learning methods for 3D shape and scene analysis using multi-view, point-based, volumetric, and graph-based representations.
+  </p>
+
+  <h2>Course Prerequisites</h2>
+  <p><strong>Strongly recommended courses before taking this course:<br></strong>
+    Linear Algebra (Math 102)<br>
+    Multivariable Calculus (Math 103)<br>
+    Artificial Intelligence (INF 311)<br>
+  </p>
+
+  <h2 data-start="142" data-end="160"><strong data-start="146" data-end="160">Class Plan</strong></h2>
+  <p data-start="162" data-end="477">
+    Lecture material will be available <strong data-start="197" data-end="215">asynchronously</strong>. Coursework can be completed <strong data-start="245" data-end="263">asynchronously</strong>. Students may attend lectures <strong data-start="294" data-end="307">in person</strong> or watch them <strong data-start="322" data-end="339">live via Zoom</strong>; attendance is optional. Zoom links, lecture notes, recorded videos, programming resources, and assignments will be posted on <strong data-start="466" data-end="476">Moodle</strong>.
+  </p>
+
+  <h2>Week-by-week outline (tentative)</h2>
+  <p>
+    Week 1: Introduction &amp; Image Formation<br data-start="254" data-end="257">
+    Week 2: Camera Geometry &amp; Calibration / Light, Shading, and Color<br data-start="322" data-end="325">
+    Week 3: Image Filtering / Multi-scale Representations<br data-start="378" data-end="381">
+    Week 4: Edges &amp; Features / Feature Matching<br data-start="424" data-end="427">
+    Week 5: Image Alignment / Robust Estimation (RANSAC)<br data-start="479" data-end="482">
+    Week 6: Stereo Vision &amp; Multi-view Geometry / Structure from Motion<br data-start="549" data-end="552">
+    Week 7: Optical Flow / Motion Estimation<br data-start="592" data-end="595">
+    Week 8: Deep Learning for Vision: MLPs / Backpropagation and Training<br data-start="664" data-end="667">
+    Week 9: Convolutional Networks (CNNs), U-Nets, ResNets / Normalization, Overfitting, and Generalization<br data-start="770" data-end="773">
+    Week 10: Modern Vision Models: Vision Transformers / Self-supervised and Contrastive Learning<br data-start="866" data-end="869">
+    Week 11: Image Understanding Tasks: Open-vocabulary Classification, Vision&ndash;Language Models / Object Detection and Segmentation<br data-start="995" data-end="998">
+    Week 12: Learning-based 3D Vision: Depth Estimation, 3D Reconstruction / 4D Reconstruction<br data-start="1088" data-end="1091">
+    Week 13: 3D Shape and Scene Analysis using Multi-view, Point-based, Volumetric, and Graph-based Representations<br>
+  </p>
+
+  <h2>Expectations/Requirements</h2>
+  <p>
+    - Two midterm exams<br>
+    - A term project (programming assignment)<br>
+    - Oral presentation of a recent state-of-the-art paper from CVPR, ECCV, or ICCV published within the previous two years. The oral presentation could be replaced with a mini-research project upon instructor's approval. <br>
+    <strong>&nbsp;</strong>
+  </p>
+
+  <h2>Grading Criteria</h2>
+  <p>
+    35% Midterm Exam I<br>
+    35% Midterm Exam II<br>
+    10% Term Project (programming assignment)<br>
+    20% Oral Presentation or Mini-Research Project<br>
+    (No final exam)
+  </p>
+
+  <p><strong>Scores to letter conversions:</strong><br>
+    [97.5, 100] =&gt; 10.0<br>
+    [92.5, 97.5) =&gt; 9.5<br>
+    [87.5, 92.5) =&gt; 9.0<br>
+    [82.5, 87.5) =&gt; 8.5<br>
+    [77.5, 82.5) =&gt; 8.0<br>
+    [72.5, 77.5) =&gt; 7.5<br>
+    [67.5, 72.5) =&gt; 7.0<br>
+    [62.5, 67.5) =&gt; 6.5<br>
+    [57.5, 62.5) =&gt; 6.0<br>
+    [52.5, 57.5) =&gt; 5.5<br>
+    [50.0, 52.5) =&gt; 5.0
+  </p>
+
+  <p>Note: A course grade below 5.0 is not a passing grade.</p>
+
+  <h2>Accommodation Statement</h2>
+  <p>
+    I am committed to providing an equal educational opportunity for all students. Students with a documented physical, psychological, or learning disability may be eligible for reasonable academic accommodations to support their success in this course. If you have a documented disability requiring accommodation, please notify me within the first month of the semester so that appropriate arrangements can be made.
+  </p>
+
+  <h2>Academic Honesty Statement</h2>
+  <p>
+    The integrity of the academic enterprise requires honesty in scholarship and research. Academic honesty is expected of all students enrolled in this course. Academic dishonesty includes, but is not limited to, cheating, fabrication, plagiarism, and facilitating academic dishonesty. Appropriate sanctions may be imposed on any student found to have committed an act of academic dishonesty.
+  </p>
+
+  <h2>COVID/Other Airborne Diseases Policy</h2>
+  <p>
+    Students who are ill with COVID-19 or other airborne diseases must not attend class in person. Students are expected to attend remotely via Zoom until they are no longer contagious.
+  </p>
+
+  <h2>Equity and Inclusion Statement</h2>
+  <p>
+    I am committed to fostering a culture of diversity and inclusion in which everyone is treated with dignity and respect. This course is for all students, regardless of age, background, citizenship, disability, ethnicity, family status, gender, geographic origin, language, political views, race, religion, or work experience. We each bring different skills and perspectives to the course, and we will learn from and with one another.
+  </p>
+  <p>
+    In both in-person and online settings, all participants are expected to uphold and promote a welcoming learning environment. Politeness, kindness, and tolerance are expected at all times. Please respect that people may hold different opinions and may approach problems in different ways. Keep unstructured critique to a minimum and ensure that any criticism is constructive. Be mindful of your own biases and avoid micro-aggressions. Listen to others and allow everyone the opportunity to participate; reflect on whether you may be dominating a conversation and make space for others to contribute.
+  </p>
+  <p>
+    Disruptive behavior is not welcome, and insulting, demeaning, or harassing behavior of any kind is unacceptable. In particular, behavior that excludes or marginalizes individuals or groups is not tolerated. If you feel that you have been, or are being, harassed or made uncomfortable by someone in this class, please contact me.
+  </p>
+
+  <br><br><br>
+
+  <a href="https://kalo-ai.github.io/">back to Evangelos Kalogerakis' page</a>
+
+</div>
+</body>
+</html>

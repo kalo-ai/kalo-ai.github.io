@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>INF 417: Computer Vision</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link media="all" href="style.css" type="text/css" rel="stylesheet">
+
+  <style type="text/css" media="all">
+    /* Keep your existing image float rule for other images on the page */
+    img {
+      padding-right: 0px;
+      padding-left: 10px;
+      float: right;
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+
+    /* Override float for the teaser so it sits centered under the title */
+    #teaser {
+      float: none;
+      display: block;
+      margin: 0 auto 10px auto;
+      padding: 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    #content {
+      margin-left: auto;
+      /* NOTE: expression(...) is an old IE-only hack; kept as-is to avoid content changes */
+      width: expression(document.body.clientWidth > 925 ? "925px" : "auto");
+      margin-right: auto;
+      text-align: left;
+      max-width: 925px;
+    }
+
+    body { text-align: center; }
+  </style>
+</head>
+
+<body>
+<div id="content">
+
+  <h1 align="center">
+    INF 426: <br>
+    Generative AI<br>
+  </h1>
+
+  <!-- Moved image OUTSIDE the H1 so it appears under the title -->
+  <img id="teaser" alt="teaser" src="teaser.png">
+
+  <h3>
+    <hr>
+    Instuctor:<br>
+    <span style="color: #1200B4">Evangelos Kalogerakis (kalogerakis AT tuc DOT gr)</span> <br>
+    <br>
+    Meeting times: <br>
+    <span style="color: #1200B4">Wednesdays + Thursdays 5-7pm ET</span> <br>
+  </h3>
+
+  <h3>
+    Location:<br>
+    <span style="color: #1200B4">Thelma Mavridou <span lang="en">Amphitheatre</span></span><br>
+    <span style="color: #FF0004"> Students can also join remotely - check moodle.tuc.gr for zoom link</span> <br>
+    <br>
+    Lecture Notes &amp; Announcements &amp; Other Information: <br>
+    <span style="color: #FF0004">Check moodle.tuc.gr</span>
+  </h3>
+
+  <h3><hr></h3>
+
+  <h2>Course Objectives</h2>
+  <p>This course covers the principles and methods of generative artificial intelligence for synthesizing digital content across multiple modalities, including text, images, audio, and 3D/4D data. Topics include digital representations of content; probabilistic modeling and latent variable methods; supervised, unsupervised, and self-supervised learning; autoregressive generative models; variational autoencoders; generative adversarial networks; and diffusion-based generative models. The course further covers foundation models, including large language models and large-scale image generation models, as well as multimodal generative systems. Advanced topics include generative models for 3D content and motion, neural representations and neural rendering, controllable and conditional generation, evaluation of generative models, and ethical considerations of generative AI.</p>
+
+  <h2>Course Prerequisites</h2>
+  <p><strong>Strongly recommended courses before taking this course:<br></strong>
+    Linear Algebra (Math 102)<br>
+    Multivariable Calculus (Math 103)<br>
+    Artificial Intelligence (INF 311)<br>
+    Computer Graphics (INF 312)    <br>
+    Computer Vision (INF 417)    <br>
+  </p>
+
+  <h2 data-start="142" data-end="160"><strong data-start="146" data-end="160">Class Plan</strong></h2>
+  <p data-start="162" data-end="477">
+    Lecture material will be available <strong data-start="197" data-end="215">asynchronously</strong>. Coursework can be completed <strong data-start="245" data-end="263">asynchronously</strong>. Students may attend lectures <strong data-start="294" data-end="307">in person</strong> or watch them <strong data-start="322" data-end="339">live via Zoom</strong>; attendance is optional. Zoom links, lecture notes, recorded videos, programming resources, and assignments will be posted on <strong data-start="466" data-end="476">Moodle</strong>.
+  </p>
+
+  <h2>Week-by-week outline (tentative)</h2>
+  <p>Week 1: Introduction; Digital Representations of Content: Text, Images, Audio, 3D &amp; 4D<br data-start="258" data-end="261">
+Week 2: Deep Learning Foundations / Supervised, Unsupervised, and Self-supervised Learning<br data-start="351" data-end="354">
+Week 3: Autoregressive Generative Models<br data-start="394" data-end="397">
+Week 4: Latent Variable Models &amp; Variational Autoencoders (VAEs)<br data-start="461" data-end="464">
+Week 5: Generative Adversarial Networks (GANs)<br data-start="510" data-end="513">
+Week 6: Diffusion Models<br data-start="537" data-end="540">
+Week 7: Foundation Models<br data-start="565" data-end="568">
+Week 8: Conditioning, Control &amp; Prompting<br data-start="609" data-end="612">
+Week 9: Multimodal Generative Models<br data-start="648" data-end="651">
+Week 10: Generative Models for 3D Content<br data-start="692" data-end="695">
+Week 11: Generative Models of Motion &amp; 4D<br data-start="736" data-end="739">
+Week 12: Neural Rendering<br data-start="764" data-end="767">
+Week 13: Evaluation of Generative Models, Deepfake Detection, and Ethics</p>
+
+  <h2>Expectations/Requirements</h2>
+  <p>- One midterm exam<br>
+  - Programming assignments (PyTorch)<br>
+  - Oral presentation of a recent state-of-the-art paper published within the previous two years (the list of candidate papers will be provided by the instructor). <br>
+  - Term project (a mini-research project)<br>
+    <strong>&nbsp;</strong>  </p>
+
+  <h2>Grading Criteria</h2>
+  <p>40% Midterm Exam I<br>
+40% Midterm Exam II<br>
+10% Programming assignments<br>
+10% Oral Presentation or Mini-Research Project<br>
+(No final exam) </p>
+
+  <p><strong>Scores to letter conversions:</strong><br>
+    [97.5, 100] =&gt; 10.0<br>
+    [92.5, 97.5) =&gt; 9.5<br>
+    [87.5, 92.5) =&gt; 9.0<br>
+    [82.5, 87.5) =&gt; 8.5<br>
+    [77.5, 82.5) =&gt; 8.0<br>
+    [72.5, 77.5) =&gt; 7.5<br>
+    [67.5, 72.5) =&gt; 7.0<br>
+    [62.5, 67.5) =&gt; 6.5<br>
+    [57.5, 62.5) =&gt; 6.0<br>
+    [52.5, 57.5) =&gt; 5.5<br>
+    [50.0, 52.5) =&gt; 5.0
+  </p>
+
+  <p>Note: A course grade below 5.0 is not a passing grade.</p>
+
+  <h2>Accommodation Statement</h2>
+  <p>
+    I am committed to providing an equal educational opportunity for all students. Students with a documented physical, psychological, or learning disability may be eligible for reasonable academic accommodations to support their success in this course. If you have a documented disability requiring accommodation, please notify me within the first month of the semester so that appropriate arrangements can be made.
+  </p>
+
+  <h2>Academic Honesty Statement</h2>
+  <p>
+    The integrity of the academic enterprise requires honesty in scholarship and research. Academic honesty is expected of all students enrolled in this course. Academic dishonesty includes, but is not limited to, cheating, fabrication, plagiarism, and facilitating academic dishonesty. Appropriate sanctions may be imposed on any student found to have committed an act of academic dishonesty.
+  </p>
+
+  <h2>COVID/Other Airborne Diseases Policy</h2>
+  <p>
+    Students who are ill with COVID-19 or other airborne diseases must not attend class in person. Students are expected to attend remotely via Zoom until they are no longer contagious.
+  </p>
+
+  <h2>Equity and Inclusion Statement</h2>
+  <p>
+    I am committed to fostering a culture of diversity and inclusion in which everyone is treated with dignity and respect. This course is for all students, regardless of age, background, citizenship, disability, ethnicity, family status, gender, geographic origin, language, political views, race, religion, or work experience. We each bring different skills and perspectives to the course, and we will learn from and with one another.
+  </p>
+  <p>
+    In both in-person and online settings, all participants are expected to uphold and promote a welcoming learning environment. Politeness, kindness, and tolerance are expected at all times. Please respect that people may hold different opinions and may approach problems in different ways. Keep unstructured critique to a minimum and ensure that any criticism is constructive. Be mindful of your own biases and avoid micro-aggressions. Listen to others and allow everyone the opportunity to participate; reflect on whether you may be dominating a conversation and make space for others to contribute.
+  </p>
+  <p>
+    Disruptive behavior is not welcome, and insulting, demeaning, or harassing behavior of any kind is unacceptable. In particular, behavior that excludes or marginalizes individuals or groups is not tolerated. If you feel that you have been, or are being, harassed or made uncomfortable by someone in this class, please contact me.
+  </p>
+
+  <br><br><br>
+
+  <a href="https://kalo-ai.github.io/">back to Evangelos Kalogerakis' page</a>
+
+</div>
+</body>
+</html>
