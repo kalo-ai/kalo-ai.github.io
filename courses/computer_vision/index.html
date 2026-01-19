@@ -6,7 +6,6 @@
   <link media="all" href="style.css" type="text/css" rel="stylesheet">
 
   <style type="text/css" media="all">
-    /* Keep your existing image float rule for other images on the page */
     img {
       padding-right: 0px;
       padding-left: 10px;
@@ -15,7 +14,6 @@
       padding-top: 20px;
     }
 
-    /* Override float for the teaser so it sits centered under the title */
     #teaser {
       float: none;
       display: block;
@@ -27,7 +25,6 @@
 
     #content {
       margin-left: auto;
-      /* NOTE: expression(...) is an old IE-only hack; kept as-is to avoid content changes */
       width: expression(document.body.clientWidth > 925 ? "925px" : "auto");
       margin-right: auto;
       text-align: left;
@@ -47,7 +44,7 @@
   </h1>
 
   <!-- Moved image OUTSIDE the H1 so it appears under the title -->
-  <img id="teaser" alt="teaser" src="teaser.png">
+  <img src="teaser.png" alt="teaser" width="800" id="teaser">
 
   <h3>
     <hr>
@@ -96,7 +93,7 @@
     Week 6: Stereo Vision &amp; Multi-view Geometry / Structure from Motion<br data-start="549" data-end="552">
     Week 7: Optical Flow / Motion Estimation<br data-start="592" data-end="595">
     Week 8: Deep Learning for Vision: MLPs / Backpropagation and Training<br data-start="664" data-end="667">
-    Week 9: Convolutional Networks (CNNs), U-Nets, ResNets / Normalization, Overfitting, and Generalization<br data-start="770" data-end="773">
+    Week 9: Convolutional Networks (CNNs), U-Nets, ResNets / Normalization layers, Overfitting, and Generalization<br data-start="770" data-end="773">
     Week 10: Modern Vision Models: Vision Transformers / Self-supervised and Contrastive Learning<br data-start="866" data-end="869">
     Week 11: Image Understanding Tasks: Open-vocabulary Classification, Vision&ndash;Language Models / Object Detection and Segmentation<br data-start="995" data-end="998">
     Week 12: Learning-based 3D Vision: Depth Estimation, 3D Reconstruction / 4D Reconstruction<br data-start="1088" data-end="1091">
@@ -107,7 +104,7 @@
   <p>
     - Two midterm exams<br>
     - A term project (programming assignment)<br>
-    - Oral presentation of a recent state-of-the-art paper from CVPR, ECCV, or ICCV published within the previous two years. The oral presentation could be replaced with a mini-research project upon instructor's approval. <br>
+    - Oral presentation of a recent state-of-the-art paper from CVPR, ECCV, or ICCV published within the previous two years  (the list of candidate papers will be provided by the instructor).  The oral presentation could be replaced with a mini-research project upon instructor's approval. <br>
     <strong>&nbsp;</strong>
   </p>
 
