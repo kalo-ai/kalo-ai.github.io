@@ -229,6 +229,58 @@ He has served as Area Chair for CVPR, ICCV, ECCV, and NeurIPS, and on
 
 
 			  
+	           <tr valign="middle">
+              <td class="ptd" width="270" valign="middle"><a href="https://prady1272.github.io/BLARM/"><img src="papers/neurips26_blarm.jpg" alt="Image" width="300"></a></td>
+              <td class="ptd" height="225" valign="middle" align="right">
+                <div align="justify">
+                  <p> <b>BLARM: Animating 3D Objects from Video via Blending Latent Rigid Motion Primitives</b><br>
+                    <em>[<a href="https://arxiv.org/pdf/2608.31113">PAPER</a>][<a href="https://prady1272.github.io/BLARM/">PAGE WITH CODE &amp; DATA COMING SOON</a>] </em><br>	
+<i><span class="student-color">Pradyumn Goyal</span>, Yizhak Ben-Shabat, Hsueh-Ti Derek Liu, Haomiao Jiang, Snehasish Mukherjee, Kyle Spence, Mark Stauber, Evangelos Kalogerakis, Yunze Zeng</i>				
+                    <br>
+                    <i>Proceedings of NeurIPS 2026</i><br>
+					  
+                    <span class="styleAbstract"><br>
+                        <em>Abstract: </em>We introduce BLARM, a feed-forward method for video-driven 3D mesh animation. Given a monocular video and a static object mesh, BLARM predicts a temporally coherent animated mesh whose motion follows the video. Rather than relying on explicit rigs or directly regressing high-dimensional vertex motion, we represent animation using a compact set of learned, time-varying rigid motion components and time-invariant vertex-to-component skinning weights. This yields a low-dimensional deformation space without requiring skeletons, cages, skinning weights, or rig annotations. Our architecture conditions geometry-derived deformation latents on video features through factorized spatial-temporal attention, then decodes rigid transformations blended by predicted skinning weights. Trained with trajectory reconstruction, entropy regularization, and motion-aware contrastive learning, BLARM produces accurate and temporally stable animations while recovering compact, interpretable motion structure from monocular video.</span> </p>
+                </div>
+              </td>
+            </tr>	
+			  
+	           <tr valign="middle">
+              <td class="ptd" width="270" valign="middle"><a href="https://github.com/nchatzis/RIGEL3D"><img src="papers/neurips26_rigel3D.jpg" alt="Image" width="300"></a></td>
+              <td class="ptd" height="225" valign="middle" align="right">
+                <div align="justify">
+                  <p> <b>Rigel3D: Rig-aware Latents for Animation-Ready 3D Asset Generation</b><br>
+                    <em>[<a href="https://arxiv.org/pdf/2608.31113">PAPER</a>][<a href="https://github.com/nchatzis/RIGEL3D">PAGE WITH CODE &amp; DATA COMING SOON</a>] </em><br>	
+<i><span class="student-color">Nikitas Chatzis, Marios Loizou</span>, Evangelos Kalogerakis</i>				
+                    <br>
+                    <i>Proceedings of NeurIPS 2026</i><br>
+					  
+                    <span class="styleAbstract"><br>
+                        <em>Abstract: </em>Recent 3D generative models can synthesize high-quality assets, but their outputs are typically static: they lack the skeletal rigs, joint hierarchies, and skinning weights required for animation. This limits their use in games, film, simulation, virtual agents, and embodied AI, where assets must not only look plausible but also move plausibly. We introduce Rigel3D, a generative method for animation-ready 3D assets represented as rigged meshes. Unlike post-hoc auto-rigging methods that attach rigs to completed shapes, our method jointly models geometry and rig structure through coupled surface and skeleton structured latent representations. A rig-aware autoencoder decodes these representations into mesh geometry, skeleton topology, joint coordinates, and skinning weights, while a two-stage latent generative model synthesizes both surface and skeleton representations for image-conditioned generation. To support downstream animation workflows, we further introduce an open-vocabulary joint labeling module that embeds generated joints into a shared vision-language space, enabling correspondence to arbitrary retargeting templates. Experiments on large-scale rigged asset datasets demonstrate that our method generates diverse, high-quality animation-ready assets and outperforms existing rigging baselines across multiple metrics. </span> </p>
+                </div>
+              </td>
+            </tr>			
+			  
+			  
+	
+	           <tr valign="middle">
+              <td class="ptd" width="270" valign="middle"><a href="https://ngoductuanlhp.github.io/VolFill/"><img src="papers/neurips26_volfill.jpg" alt="Image" width="300"></a></td>
+              <td class="ptd" height="225" valign="middle" align="right">
+                <div align="justify">
+                  <p> <b>VolFill: Single-View Amodal 3D Scene Reconstruction with Volumetric Flow Matching</b><br>
+                    <em>[<a href="https://arxiv.org/pdf/2605.31466">PAPER</a>][<a href="https://ngoductuanlhp.github.io/VolFill/">PAGE WITH CODE &amp; DATA</a>] </em><br>	
+<i><span class="student-color">Tuan Duc Ngo</span>, Chuang Gan, Evangelos Kalogerakis</i>				
+                    <br>
+                    <i>Proceedings of NeurIPS 2026</i><br>
+					  
+                    <span class="styleAbstract"><br>
+                        <em>Abstract: </em>Reconstructing the complete geometry of a scene from a single RGB image remains challenging — especially when inferring hidden structures where visual evidence is incomplete. We introduce VolFill, a generative framework that predicts the 3D structure of the complete scene rather than relying on traditional pixel-aligned regression. Our method utilizes a hybrid 3D VAE to compress sparse truncated unsigned distance function grids into a compact latent space, paired with a latent Diffusion Transformer that denoises this representation to recover the complete scene. We condition the generation on geometry foundation models, leveraging rich spatial priors for robust reasoning. Unlike existing methods limited by per-ray constraints or unstructured point-cloud queries, VolFill provides a structured representation that supports direct surface extraction and occupancy queries at scale. Extensive experiments on the SCRREAM and NRGB-D datasets demonstrate that our approach significantly outperforms current baselines, providing a robust foundation for holistic spatial understanding.  </span> </p>
+                </div>
+              </td>
+            </tr>			  
+			  
+			 
+			  
            <tr valign="middle">
               <td class="ptd" width="270" valign="middle"><a href="https://ngoductuanlhp.github.io/dage-site/"><img src="papers/cvpr2026.png" alt="Image" width="300"></a></td>
               <td class="ptd" height="225" valign="middle" align="right">
@@ -2561,6 +2613,12 @@ Proceedings of ACM MobiSys 2014</span><span> </span><span><br>
                       <td>
                         <p> 
 							
+							<a href="talks/Bringing_3D_Assets_to_Life-FAI_ECCV26.pdf">
+								 Bringing 3D Assets to Life: Generating Articulation, Physical Properties, and Motion					
+							</a> [invited talk, presented at the
+							<a href="https://diliash.github.io/fai_eccv_workshop_2026/">
+								ECCV 2026 workshop: Functionality, Articulation, and Interaction Workshop</a>]<br>						
+
 							<a href="talks/4D-aware-rel.pdf">
 Towards 4D-aware generative models: Creating dynamic, interactive 3D worlds with generative AI							
 							</a> [invited talk, presented at MIT, UofToronto, York University,  Huawei AI Applications Workshop, ICS-FORTH, 2025]<br>
@@ -2612,13 +2670,14 @@ Towards 4D-aware generative models: Creating dynamic, interactive 3D worlds with
             </tr>
             <tr>
               <td>
-                <p> <b> Current students:</b> <br>
+                <p> <b> Current students:</b> <br><br>				  
                   <a href="https://xjay18.github.io/">Junyi Cao</a> (MS/PhD)<br>
                   <a href="https://marios2019.github.io/">Marios Louizou</a> (postdoc) <br>
 				  <a href="https://gr.linkedin.com/in/nikitas-chatzis-795561274">Nikitas Chatzis</a> (PhD)<br>                  
 				  <a href="https://prady1272.github.io/">Pradyumn Goyal</a> (MS/PhD)<br>                  
 				  <a href="https://ngoductuanlhp.github.io/">Tuan Duc Ngo</a> (MS/PhD)<br>
 				  <a href="https://vikastmz.github.io/">Vikas Thamizharasan</a> (PhD)<br>                  
+				  Salom Iochanas (MS)<br><br>
 				
 				  <br>
                   <strong> Graduated:</strong><br>
@@ -2742,10 +2801,12 @@ Towards 4D-aware generative models: Creating dynamic, interactive 3D worlds with
                   Elsevier Computer &amp; Graphics (2018-2021)&nbsp; </p>
 				  
                 <p><strong>I served as Program Commitee Member or Area Chair in the following conferences:</strong> <br>
-				  CVPR 2026 (lead area chair), 2025  (lead area chair), 2024  (area chair), 2023 (area chair), 2021 (area chair) <br>
+				  CVPR 2027, CVPR 2026 (lead area chair), 2025  (lead area chair), 2024  (area chair), 2023 (area chair), 2021 (area chair) <br>
                   ICCV 2025 (lead area chair), 2023 (area chair), 2021 (area chair)<br>                  				  					
 				  ECCV 2026 (lead area chair), 2024 (area chair), 2022 (area chair)<br>
-                  NeurIPS 2026 (area chair), 2025 (area chair), 2024 (area chair)<br>					
+                  NeurIPS 2026 (area chair), 2025 (area chair), 2024 (area chair)<br>
+                  3DV 2027 (area chair)
+                  <br>					
                   SIGGRAPH 2020 (technical papers COI coodinator)<br>
                   SIGGRAPH ASIA 2018-2019 (technical papers), 2015 (technical briefs) <br>
                   Eurographics 2020-2021 (technical papers), 2018 (technical papers), 2015 (short papers), 2014 (short papers)<br>
