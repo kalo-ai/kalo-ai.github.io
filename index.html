@@ -230,6 +230,22 @@ He has served as Area Chair for CVPR, ICCV, ECCV, and NeurIPS, and on
 
 			  
 	           <tr valign="middle">
+              <td class="ptd" width="270" valign="middle"><a href="https://nchatzis.github.io/Rigel3D/"><img src="papers/neurips26_rigel3d.jpg" alt="Image" width="300"></a></td>
+              <td class="ptd" height="225" valign="middle" align="right">
+                <div align="justify">
+                  <p> <b>Rigel3D: Rig-aware Latents for Animation-Ready 3D Asset Generation</b><br>
+                    <em>[<a href="https://arxiv.org/abs/2605.13129">PAPER</a>][<a href="https://nchatzis.github.io/Rigel3D/">PAGE WITH CODE &amp; DATA COMING SOON</a>] </em><br>	
+<i><span class="student-color">Nikitas Chatzis, Marios Loizou</span>, Evangelos Kalogerakis</i>				
+                    <br>
+                    <i>Proceedings of NeurIPS 2026</i><br>
+					  
+                    <span class="styleAbstract"><br>
+                        <em>Abstract: </em>Recent 3D generative models can synthesize high-quality assets, but their outputs are typically static: they lack the skeletal rigs, joint hierarchies, and skinning weights required for animation. This limits their use in games, film, simulation, virtual agents, and embodied AI, where assets must not only look plausible but also move plausibly. We introduce Rigel3D, a generative method for animation-ready 3D assets represented as rigged meshes. Unlike post-hoc auto-rigging methods that attach rigs to completed shapes, our method jointly models geometry and rig structure through coupled surface and skeleton structured latent representations. A rig-aware autoencoder decodes these representations into mesh geometry, skeleton topology, joint coordinates, and skinning weights, while a two-stage latent generative model synthesizes both surface and skeleton representations for image-conditioned generation. To support downstream animation workflows, we further introduce an open-vocabulary joint labeling module that embeds generated joints into a shared vision-language space, enabling correspondence to arbitrary retargeting templates. Experiments on large-scale rigged asset datasets demonstrate that our method generates diverse, high-quality animation-ready assets and outperforms existing rigging baselines across multiple metrics. </span> </p>
+                </div>
+              </td>
+            </tr>	
+			
+	           <tr valign="middle">
               <td class="ptd" width="270" valign="middle"><a href="https://arxiv.org/pdf/2608.31113"><img src="papers/neurips26_blarm.jpg" alt="Image" width="300"></a></td>
               <td class="ptd" height="225" valign="middle" align="right">
                 <div align="justify">
@@ -245,23 +261,6 @@ He has served as Area Chair for CVPR, ICCV, ECCV, and NeurIPS, and on
               </td>
             </tr>	
 			  
-	           <tr valign="middle">
-              <td class="ptd" width="270" valign="middle"><a href="https://nchatzis.github.io/Rigel3D/"><img src="papers/neurips26_rigel3d.jpg" alt="Image" width="300"></a></td>
-              <td class="ptd" height="225" valign="middle" align="right">
-                <div align="justify">
-                  <p> <b>Rigel3D: Rig-aware Latents for Animation-Ready 3D Asset Generation</b><br>
-                    <em>[<a href="https://arxiv.org/abs/2605.13129">PAPER</a>][<a href="https://nchatzis.github.io/Rigel3D/">PAGE WITH CODE &amp; DATA COMING SOON</a>] </em><br>	
-<i><span class="student-color">Nikitas Chatzis, Marios Loizou</span>, Evangelos Kalogerakis</i>				
-                    <br>
-                    <i>Proceedings of NeurIPS 2026</i><br>
-					  
-                    <span class="styleAbstract"><br>
-                        <em>Abstract: </em>Recent 3D generative models can synthesize high-quality assets, but their outputs are typically static: they lack the skeletal rigs, joint hierarchies, and skinning weights required for animation. This limits their use in games, film, simulation, virtual agents, and embodied AI, where assets must not only look plausible but also move plausibly. We introduce Rigel3D, a generative method for animation-ready 3D assets represented as rigged meshes. Unlike post-hoc auto-rigging methods that attach rigs to completed shapes, our method jointly models geometry and rig structure through coupled surface and skeleton structured latent representations. A rig-aware autoencoder decodes these representations into mesh geometry, skeleton topology, joint coordinates, and skinning weights, while a two-stage latent generative model synthesizes both surface and skeleton representations for image-conditioned generation. To support downstream animation workflows, we further introduce an open-vocabulary joint labeling module that embeds generated joints into a shared vision-language space, enabling correspondence to arbitrary retargeting templates. Experiments on large-scale rigged asset datasets demonstrate that our method generates diverse, high-quality animation-ready assets and outperforms existing rigging baselines across multiple metrics. </span> </p>
-                </div>
-              </td>
-            </tr>			
-			  
-			  
 	
 	           <tr valign="middle">
               <td class="ptd" width="270" valign="middle"><a href="https://ngoductuanlhp.github.io/VolFill/"><img src="papers/neurips26_volfill.jpg" alt="Image" width="300"></a></td>
@@ -274,7 +273,7 @@ He has served as Area Chair for CVPR, ICCV, ECCV, and NeurIPS, and on
                     <i>Proceedings of NeurIPS 2026</i><br>
 					  
                     <span class="styleAbstract"><br>
-                        <em>Abstract: </em>Reconstructing the complete geometry of a scene from a single RGB image remains challenging — especially when inferring hidden structures where visual evidence is incomplete. We introduce VolFill, a generative framework that predicts the 3D structure of the complete scene rather than relying on traditional pixel-aligned regression. Our method utilizes a hybrid 3D VAE to compress sparse truncated unsigned distance function grids into a compact latent space, paired with a latent Diffusion Transformer that denoises this representation to recover the complete scene. We condition the generation on geometry foundation models, leveraging rich spatial priors for robust reasoning. Unlike existing methods limited by per-ray constraints or unstructured point-cloud queries, VolFill provides a structured representation that supports direct surface extraction and occupancy queries at scale. Extensive experiments on the SCRREAM and NRGB-D datasets demonstrate that our approach significantly outperforms current baselines, providing a robust foundation for holistic spatial understanding.  </span> </p>
+                        <em>Abstract: </em>Reconstructing the complete geometry of a scene from a single RGB image remains challenging - especially when inferring hidden structures where visual evidence is incomplete. We introduce VolFill, a generative framework that predicts the 3D structure of the complete scene rather than relying on traditional pixel-aligned regression. Our method utilizes a hybrid 3D VAE to compress sparse truncated unsigned distance function grids into a compact latent space, paired with a latent Diffusion Transformer that denoises this representation to recover the complete scene. We condition the generation on geometry foundation models, leveraging rich spatial priors for robust reasoning. Unlike existing methods limited by per-ray constraints or unstructured point-cloud queries, VolFill provides a structured representation that supports direct surface extraction and occupancy queries at scale. Extensive experiments on the SCRREAM and NRGB-D datasets demonstrate that our approach significantly outperforms current baselines, providing a robust foundation for holistic spatial understanding.  </span> </p>
                 </div>
               </td>
             </tr>			  
@@ -292,7 +291,7 @@ He has served as Area Chair for CVPR, ICCV, ECCV, and NeurIPS, and on
                     <i>Proceedings of CVPR 2026</i><br>
 					  
                     <span class="styleAbstract"><br>
-                        <em>Abstract: </em>Estimating accurate, view-consistent geometry and camera poses from uncalibrated multi-view/video inputs remains challenging—especially at high spatial resolutions and over long sequences. We present DAGE, a dual-stream transformer whose main novelty is to disentangle global coherence from fine detail. A low-resolution stream operates on aggressively downsampled frames with alternating frame/global attention to build a view-consistent representation and estimate cameras efficiently, while a high-resolution stream processes the original images per-frame to preserve sharp boundaries and small structures. A lightweight adapter fuses these streams via cross-attention, injecting global context without disturbing the pretrained single-frame pathway. This design scales resolution and clip length independently, supports inputs up to 2K, and maintains practical inference cost. DAGE delivers sharp depth/pointmaps, strong cross-view consistency, and accurate poses, establishing new state-of-the-art results for video geometry estimation and multi-view reconstruction. </span> </p>
+                        <em>Abstract: </em>Estimating accurate, view-consistent geometry and camera poses from uncalibrated multi-view/video inputs remains challenging - especially at high spatial resolutions and over long sequences. We present DAGE, a dual-stream transformer whose main novelty is to disentangle global coherence from fine detail. A low-resolution stream operates on aggressively downsampled frames with alternating frame/global attention to build a view-consistent representation and estimate cameras efficiently, while a high-resolution stream processes the original images per-frame to preserve sharp boundaries and small structures. A lightweight adapter fuses these streams via cross-attention, injecting global context without disturbing the pretrained single-frame pathway. This design scales resolution and clip length independently, supports inputs up to 2K, and maintains practical inference cost. DAGE delivers sharp depth/pointmaps, strong cross-view consistency, and accurate poses, establishing new state-of-the-art results for video geometry estimation and multi-view reconstruction. </span> </p>
                 </div>
               </td>
             </tr>	
