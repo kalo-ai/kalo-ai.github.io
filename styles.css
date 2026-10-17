@@ -95,7 +95,7 @@ section[id] { scroll-margin-top: 5.9rem; }
 /* Hero: quiet, typographic, intentionally academic. */
 .hero { background: #f7f9fb; border-bottom: 1px solid var(--line); }
 .hero-grid {
-  display: grid; grid-template-columns: minmax(0, 1fr) 266px;
+  display: grid; grid-template-columns: minmax(0, 1fr) 333px;
   align-items: center; gap: clamp(40px, 9vw, 110px);
   padding-block: 70px 74px;
 }
@@ -127,9 +127,9 @@ section[id] { scroll-margin-top: 5.9rem; }
   text-decoration: none; transition: border-color .15s ease, background .15s ease;
 }
 .hero-links a:hover { background: var(--accent-light); border-color: #a6c5de; }
-.hero-portrait { align-self: start; padding-top: 10px; }
+.hero-portrait { align-self: start; padding-top: 3px; }
 .hero-portrait img {
-  width: 100%; max-width: 266px; height: auto;
+  width: 100%; max-width: 333px; height: auto;
   border-radius: 8px; border: 7px solid white;
   background: #e8edf3; box-shadow: 0 9px 35px rgba(26, 49, 73, .11);
 }
